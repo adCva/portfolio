@@ -51,17 +51,15 @@ function Nav() {
   return (
     <div className="nav-wrapper">
       <div className='nav-container'>
-          <img src="./images/logo.svg" alt="Logo" />
+          <h1>adCva</h1>
           <img src={mobileMenu ? "./images/close-menu.svg" : "./images/menu.svg"} alt="Hamburgur" onClick={toogleMobileMenu} className="hamburgur-icon" />
           {transition((style, mobileMenu) => mobileMenu ? (
             <animated.div style={style} className="nav-menu">
-                  <ul>
-                    <li><Link to="/" onClick={closeMobileMenuOnLinkClick}>Home</Link></li>
-                    <li><Link to="/stories" onClick={closeMobileMenuOnLinkClick}>Stories</Link></li>
-                    <li><Link to="/features" onClick={closeMobileMenuOnLinkClick}>Features</Link></li>
-                    <li><Link to="/pricing" onClick={closeMobileMenuOnLinkClick}>Pricing</Link></li>
-                  </ul>
-              </animated.div>
+              <Link to="/" onClick={closeMobileMenuOnLinkClick} className="link">Home</Link>
+              <Link to="/projects" onClick={closeMobileMenuOnLinkClick} className="link">Projects</Link>
+              <Link to="/photography" onClick={closeMobileMenuOnLinkClick} className="link">Photography</Link>
+              <Link to="/contact" onClick={closeMobileMenuOnLinkClick} className="link">Contact</Link>
+            </animated.div>
           ) : null)}
       </div>
     </div>

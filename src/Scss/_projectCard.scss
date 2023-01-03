@@ -1,0 +1,27 @@
+.projectCard-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .projectCard-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: $max-width;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .card-image {
+            width: 100%;
+        }
+
+        .card-image-reverse {
+            @media (min-width: 768px) {
+                order:  1;
+            }
+        }
+    }
+}

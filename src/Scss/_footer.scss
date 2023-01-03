@@ -1,0 +1,28 @@
+.footer-wrapper {
+    background-color: $text-color;
+    color: $bg-color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .footer-container {
+        width: 90%;
+        max-width: $max-width;
+        padding: 1rem 0;
+        text-align: center;
+
+        @media (min-width:768px) {
+            display: flex;
+            text-align: left;
+            justify-content: space-between;
+        }
+
+
+        .footer-pages {
+            @media (min-width:768px) {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+}

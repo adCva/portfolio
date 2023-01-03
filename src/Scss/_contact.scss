@@ -1,0 +1,19 @@
+.contact-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .contact-container {
+        width: 90%;
+        max-width: $max-width;
+
+
+        .get-in-touch-container {
+            border-top: 1px solid #000000;
+        }
+
+        .contact-me-mail {
+            border-top: 1px solid #000000;
+        }
+    }
+}

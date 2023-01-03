@@ -1,75 +1,72 @@
 .nav-wrapper {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+  // ========== Container 
+  .nav-container {
+    position: relative;
+    width: 90%;
+    max-width: $max-width;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 1.8rem 1.5rem;
 
-    .nav-container {
-        width: 90%;
-        max-width: 1100px;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.8rem 1.5rem;
-        @media (min-width: 768px) {
-          padding: 1rem 1.5rem;
-          animation: opacity 0.25s linear;
-        }
-        @media (min-width: 1000px) {
-          padding: 1rem 2rem;
-        }
-
-        // ========== Logo and hamburgur icon
-        img {
-            z-index: 99;
-        }
-        // ========== Hamburgur icon
-        .hamburgur-icon {
-            @media (min-width: 768px) {
-            display: none; 
-            }
-        }
-
-
-        .nav-menu {
-            background-color: var(--white);
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            text-align: center;
-            padding: 6.5rem 1.5rem 2rem;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            @media (min-width: 768px) {
-              position: initial;
-              padding: 0;
-              box-shadow: none;
-            }
-            // ====== UL
-            ul {
-              margin-bottom: 2.5rem;
-              @media (min-width: 768px) {
-                display: flex;
-                margin-bottom: 0;
-              }
-              li {
-                margin-bottom: 1.85rem;
-                @media (min-width: 768px) {
-                    margin-bottom: 0;
-                    margin-right: 1.5rem;
-                    :last-of-type {
-                      margin-right: 0;
-                    }
-                }
-                @media (min-width: 1000px) {
-                  margin-right: 3rem;
-                }
-              }
-            }
-
-
-
+    @media (min-width: 768px) {
+      // padding: 1rem 1.5rem;
+      animation: opacity 0.25s linear;
     }
-}
+
+    @media (min-width: 1000px) {
+      padding: 1rem 2rem;
+    }
+
+
+    // ========== Logo and Hamburgur
+    img {
+      z-index: 99;
+    }
+
+    .hamburgur-icon {
+      @media (min-width: 768px) {
+        display: none; 
+      }
+    }
+
+
+    // ========== Menu
+    .nav-menu {
+      background-color: $bg-color;
+      position: absolute;
+      top: 1.8rem;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      z-index: 999;
+      // box-shadow: 10px 10px 5px #252525;
+
+      
+      @media (min-width: 768px) {
+        position: initial;
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+      .link {
+        margin-bottom: 1rem;
+        color: $text-color;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
 }

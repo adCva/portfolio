@@ -1,0 +1,24 @@
+.intro-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .intro-container {
+        position: relative;
+        width: 90%;
+        max-width: $max-width;
+
+        img {
+            width: 100%;
+        }
+    
+        .intro-text {
+            @media (min-width: 768px) {
+                position: absolute;
+                bottom: 0;
+                background-color: $bg-color;
+                padding: 1rem 1rem 1rem 0;
+            }
+        }
+    }
+}

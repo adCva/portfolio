@@ -1,0 +1,28 @@
+.about-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .about-container {
+        width: 90%;
+        max-width: $max-width;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+        }
+
+        img {
+            display: none;
+            width: 100%;
+
+            @media (min-width: 768px) {
+                display: initial;
+            }
+        }
+
+        .about-text {
+            border-top: 1px solid #000000;
+        }
+    }
+}

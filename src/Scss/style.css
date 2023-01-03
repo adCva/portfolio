@@ -4,17 +4,15 @@
   justify-content: center;
 }
 .nav-wrapper .nav-container {
+  position: relative;
   width: 90%;
   max-width: 1100px;
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.8rem 1.5rem;
 }
 @media (min-width: 768px) {
   .nav-wrapper .nav-container {
-    padding: 1rem 1.5rem;
     -webkit-animation: opacity 0.25s linear;
             animation: opacity 0.25s linear;
   }
@@ -33,46 +31,155 @@
   }
 }
 .nav-wrapper .nav-container .nav-menu {
-  background-color: var(--white);
-  display: block;
+  background-color: #f8f8f4;
   position: absolute;
-  top: 0;
+  top: 1.8rem;
   left: 0;
   right: 0;
-  text-align: center;
-  padding: 6.5rem 1.5rem 2rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  z-index: 999;
 }
 @media (min-width: 768px) {
   .nav-wrapper .nav-container .nav-menu {
     position: initial;
-    padding: 0;
-    box-shadow: none;
+    flex-direction: row;
+    gap: 2rem;
   }
 }
-.nav-wrapper .nav-container .nav-menu ul {
-  margin-bottom: 2.5rem;
+.nav-wrapper .nav-container .nav-menu .link {
+  margin-bottom: 1rem;
+  color: #252525;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.nav-wrapper .nav-container .nav-menu .link:hover {
+  color: #8caea5;
+}
+
+.intro-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.intro-wrapper .intro-container {
+  position: relative;
+  width: 90%;
+  max-width: 1100px;
+}
+.intro-wrapper .intro-container img {
+  width: 100%;
 }
 @media (min-width: 768px) {
-  .nav-wrapper .nav-container .nav-menu ul {
+  .intro-wrapper .intro-container .intro-text {
+    position: absolute;
+    bottom: 0;
+    background-color: #f8f8f4;
+    padding: 1rem 1rem 1rem 0;
+  }
+}
+
+.about-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about-wrapper .about-container {
+  width: 90%;
+  max-width: 1100px;
+}
+@media (min-width: 768px) {
+  .about-wrapper .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+.about-wrapper .about-container img {
+  display: none;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .about-wrapper .about-container img {
+    display: initial;
+  }
+}
+.about-wrapper .about-container .about-text {
+  border-top: 1px solid #000000;
+}
+
+.footer-wrapper {
+  background-color: #252525;
+  color: #f8f8f4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-wrapper .footer-container {
+  width: 90%;
+  max-width: 1100px;
+  padding: 1rem 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer-wrapper .footer-container {
     display: flex;
-    margin-bottom: 0;
+    text-align: left;
+    justify-content: space-between;
   }
-}
-.nav-wrapper .nav-container .nav-menu ul li {
-  margin-bottom: 1.85rem;
 }
 @media (min-width: 768px) {
-  .nav-wrapper .nav-container .nav-menu ul li {
-    margin-bottom: 0;
-    margin-right: 1.5rem;
-  }
-  .nav-wrapper .nav-container .nav-menu ul li :last-of-type {
-    margin-right: 0;
+  .footer-wrapper .footer-container .footer-pages {
+    display: flex;
+    gap: 1rem;
   }
 }
-@media (min-width: 1000px) {
-  .nav-wrapper .nav-container .nav-menu ul li {
-    margin-right: 3rem;
+
+.projectCard-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.projectCard-wrapper .projectCard-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1100px;
+}
+@media (min-width: 768px) {
+  .projectCard-wrapper .projectCard-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+}
+.projectCard-wrapper .projectCard-container .card-image {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .projectCard-wrapper .projectCard-container .card-image-reverse {
+    order: 1;
+  }
+}
+
+.contact-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-wrapper .contact-container {
+  width: 90%;
+  max-width: 1100px;
+}
+.contact-wrapper .contact-container .get-in-touch-container {
+  border-top: 1px solid #000000;
+}
+.contact-wrapper .contact-container .contact-me-mail {
+  border-top: 1px solid #000000;
+}
+
+body {
+  background-color: #f8f8f4;
+  color: #252525;
+  font-family: "Public Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */

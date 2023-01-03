@@ -1,1 +1,13 @@
+@import "config";
 @import "navbar";
+@import "intro";
+@import "about";
+@import "footer";
+@import "projectCard";
+@import "contact";
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: $main-font;
+}
