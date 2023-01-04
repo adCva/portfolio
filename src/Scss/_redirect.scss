@@ -1,0 +1,12 @@
+.redirect-wrapper {
+    @extend %set-width-and-center;
+
+    .redirect-container {
+        width: 90%;
+        max-width: $max-width;
+        
+        h1 {
+
+        }
+    }
+}

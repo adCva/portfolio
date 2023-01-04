@@ -1,21 +1,17 @@
 .nav-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
+  @extend %parent-container-width-and-center;
 
   // ========== Container 
   .nav-container {
+    @extend %child-container-width-and-center;
     position: relative;
-    width: 90%;
-    max-width: $max-width;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // padding: 1.8rem 1.5rem;
+    padding: 1.8rem 0;
 
     @media (min-width: 768px) {
-      // padding: 1rem 1.5rem;
+      padding: 1rem 0;
       animation: opacity 0.25s linear;
     }
 
@@ -25,24 +21,26 @@
 
 
     // ========== Logo and Hamburgur
-    img {
-      z-index: 99;
+    h1 {
+      font-family: $logo-font;
+      user-select: none;
     }
 
-    .hamburgur-icon {
-      @media (min-width: 768px) {
-        display: none; 
-      }
+    .mobile-menu-btn {
+      background: transparent;
+      border: none;
+      font-size: 1.7rem;
     }
 
 
     // ========== Menu
     .nav-menu {
-      background-color: $bg-color;
-      position: absolute;
-      top: 1.8rem;
-      left: 0;
+      background-color: $header-color;
+      position: fixed;
+      top: 0;
+      left: 20%;
       right: 0;
+      bottom: 0;
       display: flex;
       flex-direction: column;
       align-items: center;

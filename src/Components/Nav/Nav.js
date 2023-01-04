@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { useTransition, animated } from 'react-spring';
+import { HiMenu } from "react-icons/hi";
+import { CgClose } from "react-icons/cg";
 
 
 function Nav() {
@@ -52,7 +54,7 @@ function Nav() {
     <div className="nav-wrapper">
       <div className='nav-container'>
           <h1>adCva</h1>
-          <img src={mobileMenu ? "./images/close-menu.svg" : "./images/menu.svg"} alt="Hamburgur" onClick={toogleMobileMenu} className="hamburgur-icon" />
+          <button onClick={toogleMobileMenu} className="mobile-menu-btn">{mobileMenu ? <CgClose /> : <HiMenu />}</button>
           {transition((style, mobileMenu) => mobileMenu ? (
             <animated.div style={style} className="nav-menu">
               <Link to="/" onClick={closeMobileMenuOnLinkClick} className="link">Home</Link>
@@ -61,6 +63,7 @@ function Nav() {
               <Link to="/contact" onClick={closeMobileMenuOnLinkClick} className="link">Contact</Link>
             </animated.div>
           ) : null)}
+          
       </div>
     </div>
   )
