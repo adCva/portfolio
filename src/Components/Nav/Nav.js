@@ -30,8 +30,6 @@ function Nav() {
         setMobileMenu(true);
       }
     }
-
-    //window.scrollTo(0, 0);
     
     
     window.addEventListener("resize", mobileNavScreenWidth);
@@ -53,24 +51,25 @@ function Nav() {
   return (
     <div className="nav-wrapper">
       <div className='nav-container'>
-          <h1>adCva</h1>
-          <button onClick={toogleMobileMenu} className="mobile-menu-btn">{mobileMenu ? <CgClose /> : <HiMenu />}</button>
+          <h1 className="nav-logo">adCva</h1>
+          <button onClick={toogleMobileMenu} className="open-mobile-menu mobile-menu-btn"><HiMenu /></button>
           {transition((style, mobileMenu) => mobileMenu ? (
             <animated.div style={style} className="nav-menu">
-              <Link to="/" onClick={closeMobileMenuOnLinkClick} className="link">Home</Link>
-              <Link to="/projects" onClick={closeMobileMenuOnLinkClick} className="link">Projects</Link>
-              <Link to="/photography" onClick={closeMobileMenuOnLinkClick} className="link">Photography</Link>
-              <Link to="/contact" onClick={closeMobileMenuOnLinkClick} className="link">Contact</Link>
+              <div className='mobile-inter'>
+                <h1 className="nav-logo">adCva</h1>
+                <button onClick={toogleMobileMenu} className="close-mobile-menu mobile-menu-btn"><CgClose /></button>
+              </div>
+              <ul>
+                <Link to="/" onClick={closeMobileMenuOnLinkClick} className="link">Home</Link>
+                <Link to="/projects" onClick={closeMobileMenuOnLinkClick} className="link">Projects</Link>
+                <Link to="/photography" onClick={closeMobileMenuOnLinkClick} className="link">Photography</Link>
+                <Link to="/contact" onClick={closeMobileMenuOnLinkClick} className="link">Contact</Link>
+              </ul>
             </animated.div>
           ) : null)}
-          
       </div>
     </div>
   )
 }
 
 export default Nav;
-
-
-
-

@@ -6,7 +6,6 @@
     .intro-container {
         position: relative;
         width: 90%;
-        max-width: $max-width;
 
         img {
             width: 100%;
@@ -16,7 +15,7 @@
             @media (min-width: 768px) {
                 position: absolute;
                 bottom: 0;
-                background-color: $bg-color;
+                background-color: $background-color;
                 padding: 1rem 1rem 1rem 0;
             }
         }

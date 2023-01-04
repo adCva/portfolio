@@ -1,68 +1,124 @@
 .nav-wrapper {
   @extend %parent-container-width-and-center;
 
-  // ========== Container 
   .nav-container {
     @extend %child-container-width-and-center;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.8rem 0;
+    padding: 1.3rem 0;
 
     @media (min-width: 768px) {
-      padding: 1rem 0;
+      padding: 1.5rem 0;
       animation: opacity 0.25s linear;
     }
 
-    @media (min-width: 1000px) {
-      padding: 1rem 2rem;
+
+
+    // =========== Logo
+    .nav-logo {
+      @extend %logo;
+
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
+      }
+
+      @media (min-width: 1000px) {
+        font-size: 1.2rem;
+      }
     }
 
 
-    // ========== Logo and Hamburgur
-    h1 {
-      font-family: $logo-font;
-      user-select: none;
-    }
 
+    // =========== Mobile Menu Buttons
     .mobile-menu-btn {
       background: transparent;
       border: none;
-      font-size: 1.7rem;
+      font-size: 1.5rem;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
 
 
-    // ========== Menu
+
+    // =========== Nav Menu
     .nav-menu {
-      background-color: $header-color;
+      background-color: $background-color;
       position: fixed;
       top: 0;
-      left: 20%;
+      left: 0;
       right: 0;
-      bottom: 0;
+      bottom: 55%;
+      z-index: 999;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 0.3rem;
-      z-index: 999;
-      // box-shadow: 10px 10px 5px #252525;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
-      
-      @media (min-width: 768px) {
-        position: initial;
-        flex-direction: row;
-        gap: 2rem;
+
+      @media (orientation:landscape) {
+        bottom: 27%;
       }
 
-      .link {
-        margin-bottom: 1rem;
-        color: $text-color;
-        text-decoration: none;
-        transition: all 0.2s ease-in-out;
+      @media (min-width: 768px) {
+        position: initial;
+        box-shadow: none;
+      }
 
-        &:hover {
-          color: $link-hover-color;
+
+
+      // =========== Mobile Logo and Btn container
+      .mobile-inter {
+        @extend %child-container-width-and-center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.3rem 0;
+
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+
+
+
+      // =========== List & Links
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8rem;
+        margin-top: 1rem;
+
+
+        @media (orientation:landscape) {
+          margin-top: 0;
+        }
+
+        @media (min-width: 768px) {
+          flex-direction: row;
+          gap: 1.5rem;
+          margin-top: 0;
+        }
+
+
+        .link {
+          color: $text-color;
+          text-decoration: none;
+          font-family: $main-font;
+          font-size: 1.1rem;
+          transition: all 0.25s ease-in-out;
+
+          @media (min-width: 768px) {
+            font-size: 1rem;
+          }
+
+          &:hover {
+            color: $link-hover-color;
+          }
         }
       }
     }
