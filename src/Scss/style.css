@@ -1,17 +1,20 @@
-.contact-wrapper, .projectCard-wrapper, .footer-wrapper, .about-wrapper, .intro-wrapper, .nav-wrapper {
+.redirect-wrapper, .contact-wrapper, .projectCard-wrapper, .footer-wrapper, .about-wrapper, .intro-wrapper, .nav-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.contact-wrapper .contact-container, .projectCard-wrapper .projectCard-container, .footer-wrapper .footer-container, .about-wrapper .about-container, .intro-wrapper .intro-container, .nav-wrapper .nav-container .nav-menu .mobile-inter, .nav-wrapper .nav-container {
+.redirect-wrapper .redirect-container, .contact-wrapper .contact-container, .projectCard-wrapper .projectCard-container, .footer-wrapper .footer-container, .about-wrapper .about-container, .intro-wrapper .intro-container, .nav-wrapper .nav-container .nav-menu .mobile-inter, .nav-wrapper .nav-container {
   width: 90%;
   max-width: 1100px;
 }
 
 .page-btn-light {
   background-color: transparent;
+  color: #201f25;
   border: 1px solid #201f25;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
 }
 .page-btn-light:hover {
   background-color: #201f25;
@@ -20,7 +23,10 @@
 
 .page-btn-dark {
   background-color: #201f25;
+  color: #f8f8f8;
   border: 1px solid transparent;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
 }
 .page-btn-dark:hover {
   background-color: #f8f8f8;
@@ -35,7 +41,7 @@
           user-select: none;
 }
 
-.contact-wrapper .contact-container .contact-me-mail h1, .contact-wrapper .contact-container .get-in-touch-container h1, .projectCard-wrapper .projectCard-container .projectCard-text h2, .intro-wrapper .intro-container .intro-text h1 {
+.redirect-wrapper .redirect-container h1, .contact-wrapper .contact-container .contact-me-mail h1, .contact-wrapper .contact-container .get-in-touch-container h1, .projectCard-wrapper .projectCard-container .projectCard-text h2, .intro-wrapper .intro-container .intro-text h1 {
   font-family: "Ibarra Real Nova", serif;
   font-weight: 700;
   font-size: 2.2rem;
@@ -345,6 +351,12 @@
 .contact-wrapper .contact-container .contact-me-mail {
   border-top: 0.5px solid #cccccc;
   padding: 1.5rem 0;
+}
+.redirect-wrapper {
+  padding: 5rem 0;
+}
+.redirect-wrapper .redirect-container {
+  text-align: center;
 }
 body {
   background-color: #f8f8f8;

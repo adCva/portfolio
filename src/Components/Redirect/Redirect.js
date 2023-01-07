@@ -6,7 +6,7 @@ function Redirect() {
     <div className='redirect-wrapper'>
         <div className='redirect-container'>
             <h1>Interested in doing a project together?</h1>
-            <Link to="/contact" className="btn">Contact Me</Link>
+            <Link to="/contact" className="btn page-btn-light">Contact Me</Link>
         </div>
     </div>
   )

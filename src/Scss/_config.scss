@@ -31,7 +31,10 @@ $header-fw-700: 700;
 // =================== Buttons
 .page-btn-light {
     background-color: transparent;
+    color: $header-color;
     border: 1px solid $header-color;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
 
     &:hover {
         background-color: $header-color;
@@ -41,7 +44,10 @@ $header-fw-700: 700;
 
 .page-btn-dark {
     background-color: $header-color;
+    color: $background-color;
     border: 1px solid transparent;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
 
     &:hover {
         background-color: $background-color;
