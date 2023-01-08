@@ -1,6 +1,5 @@
 .redirect-wrapper {
     @extend %parent-container-width-and-center;
-    padding: 5rem 0;
 
     .redirect-container {
         @extend %child-container-width-and-center;
