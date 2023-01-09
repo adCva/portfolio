@@ -7,45 +7,35 @@
 .redirect-wrapper .redirect-container, .contact-wrapper .contact-container, .projectCard-wrapper .projectCard-container, .footer-wrapper .footer-container, .about-wrapper .about-container, .intro-wrapper .intro-container, .nav-wrapper .nav-container .nav-menu .mobile-inter, .nav-wrapper .nav-container {
   width: 90%;
   max-width: 1100px;
+  padding: 2.5rem 0;
 }
 
-.page-btn-light {
-  background-color: transparent;
+.redirect-wrapper .redirect-container h1 {
   color: #201f25;
-  border: 1px solid #201f25;
-  text-decoration: none;
-  padding: 1rem 1.5rem;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: -0.3px;
 }
-.page-btn-light:hover {
-  background-color: #201f25;
-  color: #f8f8f8;
+@media (min-width: 768px) {
+  .redirect-wrapper .redirect-container h1 {
+    font-size: 2.15rem;
+  }
 }
 
-.page-btn-dark {
-  background-color: #201f25;
-  color: #f8f8f8;
-  border: 1px solid transparent;
-  text-decoration: none;
-  padding: 1rem 1.5rem;
-}
-.page-btn-dark:hover {
-  background-color: #f8f8f8;
+.contact-wrapper .contact-container .contact-me-mail h1, .contact-wrapper .contact-container .get-in-touch-container h1, .projectCard-wrapper .projectCard-container .projectCard-text h2, .intro-wrapper .intro-container .intro-text h1 {
   color: #201f25;
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: -0.3px;
 }
-
 .footer-wrapper .footer-container .footer-pages .footer-logo, .nav-wrapper .nav-container .nav-logo {
   font-family: "Monoton", cursive;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-
-.redirect-wrapper .redirect-container h1, .contact-wrapper .contact-container .contact-me-mail h1, .contact-wrapper .contact-container .get-in-touch-container h1, .projectCard-wrapper .projectCard-container .projectCard-text h2, .intro-wrapper .intro-container .intro-text h1 {
-  font-family: "Ibarra Real Nova", serif;
-  font-weight: 700;
-  font-size: 2.2rem;
-  color: #201f25;
 }
 
 .nav-wrapper .nav-container {
@@ -62,14 +52,17 @@
             animation: opacity 0.25s linear;
   }
 }
+.nav-wrapper .nav-container .nav-logo {
+  font-size: 1.2rem;
+}
 @media (min-width: 768px) {
   .nav-wrapper .nav-container .nav-logo {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 1000px) {
   .nav-wrapper .nav-container .nav-logo {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 .nav-wrapper .nav-container .mobile-menu-btn {
@@ -88,17 +81,11 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 55%;
   z-index: 999;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-@media (orientation: landscape) {
-  .nav-wrapper .nav-container .nav-menu {
-    bottom: 27%;
-  }
 }
 @media (min-width: 768px) {
   .nav-wrapper .nav-container .nav-menu {
@@ -121,7 +108,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.9rem;
   margin-top: 1rem;
 }
 @media (orientation: landscape) {
@@ -132,8 +119,8 @@
 @media (min-width: 768px) {
   .nav-wrapper .nav-container .nav-menu ul {
     flex-direction: row;
-    gap: 1.5rem;
     margin-top: 0;
+    gap: 2rem;
   }
 }
 .nav-wrapper .nav-container .nav-menu ul .link {
@@ -143,13 +130,19 @@
   font-size: 1.1rem;
   transition: all 0.25s ease-in-out;
 }
+.nav-wrapper .nav-container .nav-menu ul .link:hover {
+  color: #8caea5;
+}
+.nav-wrapper .nav-container .nav-menu ul .link:last-of-type {
+  margin-bottom: 2.5rem;
+}
 @media (min-width: 768px) {
   .nav-wrapper .nav-container .nav-menu ul .link {
     font-size: 1rem;
   }
-}
-.nav-wrapper .nav-container .nav-menu ul .link:hover {
-  color: #8caea5;
+  .nav-wrapper .nav-container .nav-menu ul .link:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .intro-wrapper .intro-container {
@@ -352,11 +345,24 @@
   border-top: 0.5px solid #cccccc;
   padding: 1.5rem 0;
 }
-.redirect-wrapper {
-  padding: 5rem 0;
-}
 .redirect-wrapper .redirect-container {
   text-align: center;
+}
+@media (min-width: 1000px) {
+  .redirect-wrapper .redirect-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+.redirect-wrapper .redirect-container h1 {
+  margin-bottom: 2rem;
+}
+@media (min-width: 1000px) {
+  .redirect-wrapper .redirect-container h1 {
+    margin-bottom: 0;
+    max-width: 500px;
+  }
 }
 body {
   background-color: #f8f8f8;

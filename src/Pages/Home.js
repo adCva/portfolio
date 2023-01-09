@@ -10,10 +10,7 @@ function Home() {
   return (
     <div>
       <Nav />
-      <Intro />
-      <About />
-      <Redirect />
-      <Footer />
+
     </div>
   )
 }

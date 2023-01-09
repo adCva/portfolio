@@ -1,5 +1,6 @@
 .nav-wrapper {
   @extend %parent-container-width-and-center;
+  // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   .nav-container {
     @extend %child-container-width-and-center;
@@ -19,13 +20,14 @@
     // =========== Logo
     .nav-logo {
       @extend %logo;
+      font-size: 1.2rem;
 
       @media (min-width: 768px) {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
       }
 
       @media (min-width: 1000px) {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
       }
     }
 
@@ -51,17 +53,12 @@
       top: 0;
       left: 0;
       right: 0;
-      bottom: 55%;
+      // bottom: 55%;
       z-index: 999;
       display: flex;
       flex-direction: column;
       align-items: center;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-
-
-      @media (orientation:landscape) {
-        bottom: 27%;
-      }
 
       @media (min-width: 768px) {
         position: initial;
@@ -90,7 +87,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1.8rem;
+        gap: 1.9rem;
         margin-top: 1rem;
 
 
@@ -100,8 +97,8 @@
 
         @media (min-width: 768px) {
           flex-direction: row;
-          gap: 1.5rem;
           margin-top: 0;
+          gap: 2rem;
         }
 
 
@@ -112,12 +109,20 @@
           font-size: 1.1rem;
           transition: all 0.25s ease-in-out;
 
-          @media (min-width: 768px) {
-            font-size: 1rem;
-          }
-
           &:hover {
             color: $link-hover-color;
+          }
+
+          &:last-of-type {
+            margin-bottom: 2.5rem;
+          }
+
+          @media (min-width: 768px) {
+            font-size: 1rem;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
           }
         }
       }
