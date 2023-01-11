@@ -1,86 +1,18 @@
-// =================== Colors.
-$background-color: #f8f8f8;
-$text-color: #242424;
-$header-color: #201f25;
-$link-hover-color: #8caea5;
-$light-border-color: #cccccc;
+// ================================= Colors
+$background-color: #ffffff;
+$header-color: #121212;
+$paragraph-color: #666666;
+$link-color: #000000;
 
 
-// =================== Fonts
-$main-font: 'Public Sans', sans-serif;
-$logo-font: 'Monoton', cursive;
-$header-font: 'Ibarra Real Nova', serif;
-$header-fw-400: 400;
-$header-fw-500: 500;
-$header-fw-700: 700;
+// ================================= Fonts
+$general-font: 'Merriweather', serif;
+$header-font: 'Raleway', sans-serif;
 
 
 
-
-// =================== Width & center
-%parent-container-width-and-center {
+// ================================= General
+%parent-width {
     width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-%child-container-width-and-center {
-    width: 90%;
-    max-width: 1100px;
-    padding: 2.5rem 0;
-}
-
-
-// =================== Text 
-%heading {
-    color: $header-color;
-    font-family: $header-font;
-    font-weight: $header-fw-700;
-    font-size: 2.5rem;
-    // line-height: 40px;
-    letter-spacing: -0.3px;
-
-    @media (min-width: 768px) {
-        font-size: 2.15rem;
-    }
-}
-
-
-%subtitle {
-    color: $header-color;
-    font-family: $header-font;
-    font-weight: $header-fw-400;
-    font-size: 2rem;
-    // line-height: 40px;
-    letter-spacing: -0.3px;
-
-    @media (min-width: 768px) {
-        //font-size: 1.7rem;
-    }
-}
-
-
-
-// =================== Buttons
-.big-btn {
-        
-}
-
-.big-btn {
-
-}
-
-.big-btn-light {
-
-}
-
-.project-btn-dark {
-    
-}
-
-
-// =================== Logo
-%logo {
-    font-family: $logo-font;
-    user-select: none;
+    max-width: 2000px;
 }

@@ -1,15 +1,12 @@
 import React from 'react';
-import Nav from "../Components/Nav/Nav";
-import Footer from '../Components/Footer/Footer';
-
+import Nav from "../Components/Nav";
 
 function Photography() {
   return (
     <div>
       <Nav />
-      <Footer />
     </div>
   )
 }
 
-export default Photography
+export default Photography;
