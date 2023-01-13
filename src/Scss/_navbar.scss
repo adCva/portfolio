@@ -1,131 +1,145 @@
-.nav-wrapper {
-  @extend %parent-container-width-and-center;
-  // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.navbar-container {
+  background-color: beige;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 
-  .nav-container {
-    @extend %child-container-width-and-center;
-    position: relative;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+
+  // ================================= Nav Logo
+  h1 {
+    grid-column: 2 / span 1;
+  }
+
+
+  // ================================= Nav Toggle
+  .nav-toggle {
+    display: none;
+
+    // === ~ is looking for a sibling
+    &:checked ~ nav {
+      transform: scale(1, 1);
+    }
+    &:checked ~ nav .nav-page-link {
+      opacity: 1;
+      transition: opacity 250ms ease-in-out 150ms;
+    }
+  }
+
+
+  // ================================= Label
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.3rem 0;
+    margin-left: 1em;
+    user-select: none;
 
     @media (min-width: 768px) {
-      padding: 1.5rem 0;
-      animation: opacity 0.25s linear;
+      display: none;
     }
 
 
+    span {
+      position: relative;
+      display: block;
+      background-color: black;
+      height: 2px;
+      width: 2em;
+      border-radius: 2px;
 
-    // =========== Logo
-    .nav-logo {
-      @extend %logo;
-      font-size: 1.2rem;
-
-      @media (min-width: 768px) {
-        font-size: 1.3rem;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 7px;
+        display: block;
+        background-color: black;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
       }
 
-      @media (min-width: 1000px) {
-        font-size: 1.4rem;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        display: block;
+        background-color: black;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
       }
     }
+  }
 
 
+  // ================================= Nav
+  nav {
+    background-color: beige;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 300ms ease-in-out;
 
-    // =========== Mobile Menu Buttons
-    .mobile-menu-btn {
-      background: transparent;
-      border: none;
-      font-size: 1.5rem;
-
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
-
-
-
-    // =========== Nav Menu
-    .nav-menu {
-      background-color: $background-color;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      // bottom: 55%;
-      z-index: 999;
+    @media (min-width: 768px) {
+      all: unset;
       display: flex;
-      flex-direction: column;
+      justify-content: flex-end;
       align-items: center;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      grid-column: 3 / 4;
+    }
+
+
+    // ================================= Nav Ul
+    ul {
+      list-style: none;
 
       @media (min-width: 768px) {
-        position: initial;
-        box-shadow: none;
+        display: flex;
+        justify-content: flex-end;
       }
 
 
-
-      // =========== Mobile Logo and Btn container
-      .mobile-inter {
-        @extend %child-container-width-and-center;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.3rem 0;
+      // ================================= Nav Li
+      li {
+        margin-bottom: 1em;
+        margin-left: 1em;
 
         @media (min-width: 768px) {
-          display: none;
-        }
-      }
-
-
-
-      // =========== List & Links
-      ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.9rem;
-        margin-top: 1rem;
-
-
-        @media (orientation:landscape) {
-          margin-top: 0;
-        }
-
-        @media (min-width: 768px) {
-          flex-direction: row;
-          margin-top: 0;
-          gap: 2rem;
+          margin-bottom: 0;
         }
 
 
-        .link {
-          color: $text-color;
+        // ================================= Links
+        .nav-page-link {
+          position: relative;
           text-decoration: none;
-          font-family: $main-font;
-          font-size: 1.1rem;
-          transition: all 0.25s ease-in-out;
+          text-transform: uppercase;
+          opacity: 0;
+          transition: opacity 150ms ease-in-out;
 
           &:hover {
-            color: $link-hover-color;
-          }
-
-          &:last-of-type {
-            margin-bottom: 2.5rem;
+            color: red;
           }
 
           @media (min-width: 768px) {
-            font-size: 1rem;
-
-            &:last-of-type {
-              margin-bottom: 0;
-            }
+            opacity: 1;
           }
         }
       }
     }
   }
+
 }
