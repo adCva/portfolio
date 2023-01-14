@@ -1,5 +1,6 @@
 import './App.css';
 import "./Scss/style.css";
+import Slide from "./Components/Slide";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import Photography from "./Pages/Photography";
@@ -11,7 +12,7 @@ function App() {
   return (
     <BrowserRouter basename={window.location.pathname || ''} className="App">
       <Routes>
-        <Route exact path="/" element={<Home />}/>
+        <Route exact path="/" element={<Slide />}/>
         <Route path="/projects" element={<Projects />}/>
         <Route path="/photography" element={<Photography />}/>
         <Route path="/contact" element={<Contact />}/>
