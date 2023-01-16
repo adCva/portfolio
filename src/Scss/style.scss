@@ -1,29 +1,18 @@
 @import "config";
-@import "nav";
-@import "navbar";
-@import "about";
-@import "slide";
 
-body {
-    font-family: $general-font;
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.5rem;
-    text-transform: none;
-    letter-spacing: .02rem;
-}
 
-img {
-    width: 100%;
-}
+// ==================== Components
+@import "./Components/nav";
+@import "./Components/slider";
+@import "./Components/about";
+@import "./Components/tech";
+@import "./Components/interested";
+@import "./Components/footer";
+@import "./Components/mainProjectCard";
+@import "./Components/miscellaneousProjectCard";
 
-.App {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
-.pages-nav-container {
-    // background-color: red;
-}
+// ==================== Pages
+@import "./Pages/projects";
+@import "./Pages/photography";
+@import "./Pages/contact";

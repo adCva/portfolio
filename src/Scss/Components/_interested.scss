@@ -1,0 +1,28 @@
+.interested-wrapper {
+    @extend %parent-container-width-and-center;
+    background: $light-section-color;
+
+    .interested-container {
+        @extend %child-container-width-and-center;
+        text-align: center;
+
+        @media (min-width: 1000px) {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+
+            @media (min-width: 1000px) {
+                margin-bottom: 0;
+                max-width: 500px;
+            }
+        }
+
+        .btn {
+            
+        }
+    }
+}

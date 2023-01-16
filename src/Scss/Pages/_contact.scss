@@ -1,0 +1,23 @@
+.contact-wrapper {
+    @extend %parent-container-width-and-center;
+
+    .contact-container {
+        @extend %child-container-width-and-center;
+
+
+        .get-in-touch-container {
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+
+        .contact-form-container {
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
