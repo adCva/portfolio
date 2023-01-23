@@ -1,60 +1,10 @@
-$light-green: #69c4ab;
-$white: #ffffff;
-$light-section-color: #f7f5f1;
-$footer-color: #1a1a1a;
+// =========================== Fonts.
+$logo-font: 'Raleway', sans-serif;
+$header-font: 'Ibarra Real Nova', serif;
+$general-font: 'Public Sans', sans-serif;
 
 
-
-%parent-container-width-and-center {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-%child-container-width-and-center {
-    width: 90%;
-    max-width: 1200px;
-}
-
-%logo {
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-    text-transform: uppercase;
-}
-
-@keyframes slide_animation {
-    0% {
-        right: 0px;
-    }
-    10% {
-        right: 0%;
-    }
-    20% {
-        right: 1200px;
-    }
-    30% {
-        right: 1200px;
-    }
-    40% {
-        right: 2400px;
-    }
-    50% {
-        right: 2400px;
-    }
-    60% {
-        right: 1200px;
-    }
-    70% {
-        right: 1200px;
-    }
-    80% {
-        right: 0px;
-    }
-    90% {
-        right: 0px;
-    }
-    100% {
-        right: 0px;
-    }
-}
+// =========================== Colors.
+$white: #fafafa;
+$section-white: #f7f7f7;
+$header-color: #33323d;
