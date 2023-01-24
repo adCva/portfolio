@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -36,9 +37,8 @@ function Hero() {
             </SwiperSlide>
         </Swiper>
         <div className="hero-text">
-            <h1>Hello</h1>
-            <p>Lorem ipsum</p>
-            <button>Click Me!</button>
+            <h1>Hey, I'm Me and I love building beautiful websites</h1>
+            <Link to="/projects" className="hero-btn">Click Me!</Link>
         </div>
     </div>
   )
