@@ -2,48 +2,47 @@ import React from 'react'
 
 function Tech() {
   return (
-    <div className='tech-wrapper'>
-        <div className='tech-container'>
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
-            <div className='tech-cards-container'>
+    <div className='tech-container'>
+        <h2>Technologies that I worked with</h2>
 
-                <div className='tech-card'>
-                    <img src="" alt="JavaScript" />
-                    <h6>Lorem Ipsum</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+        <div className='tech-cards-container'>
 
-                <div className='tech-card'>
-                    <img src="" alt="JavaScript" />
-                    <h6>Lorem Ipsum</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                
-                <div className='tech-card'>
-                    <img src="" alt="JavaScript" />
-                    <h6>Lorem Ipsum</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div className='tech-card'>
-                    <img src="" alt="JavaScript" />
-                    <h6>Lorem Ipsum</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div className='tech-card'>
-                    <img src="" alt="JavaScript" />
-                    <h6>Lorem Ipsum</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div className='tech-card'>
-                    <img src="" alt="JavaScript" />
-                    <h6>Lorem Ipsum</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
+            <div className='tech-card'>
+                <img src="images/icons/javaScript.png" alt="JavaScript" />
             </div>
+
+            <div className='tech-card'>
+                <img src="images/icons/reactjs.png" alt="JavaScript" />
+            </div>
+                
+            <div className='tech-card'>
+                <img src="images/icons/php.png" alt="JavaScript" />
+            </div>
+
+            <div className='tech-card'>
+                <img src="images/icons/mysql.png" alt="JavaScript" />
+            </div>
+
+            <div className='tech-card'>
+                <img src="images/icons/css.png" alt="JavaScript" />
+            </div>
+
+            <div className='tech-card'>
+                <img src="images/icons/html.png" alt="JavaScript" />
+            </div>
+
+            <div className='tech-card'>
+                <img src="images/icons/python.png" alt="JavaScript" />
+            </div>
+
+            <div className='tech-card'>
+                <img src="images/icons/java.png" alt="JavaScript" />
+            </div>
+
+            <div className='tech-card'>
+                <img src="images/icons/lightroom.png" alt="JavaScript" />
+            </div>
+
         </div>
     </div>
   )
