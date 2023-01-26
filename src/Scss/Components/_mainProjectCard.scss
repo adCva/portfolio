@@ -1,5 +1,76 @@
 .main-project-card-container {
+    margin-bottom: 2rem;
+
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        margin-bottom: 4rem;
+    }
+
     img {
         width: 100%;
+    }
+
+
+    .main-project-card-text-container {
+        margin-top: 1.5rem;
+
+        @media (min-width: 768px) {
+            margin-top: 0;
+            margin-left: 2rem;
+        }
+
+
+        h2 {
+            color: $header-color;
+            font-family: $header-font;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.3px;
+
+            @media (min-width: 768px) {
+                font-size: 2.35rem;
+            }
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+
+        .card-buttons-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+
+            a {
+                @extend %button;
+                background-color: transparent;
+                color: $header-color;
+                font-size: 1.1rem;
+                text-decoration: none;
+                border: 1px solid $header-color;
+
+                &:hover {
+                    background-color: $transparent-btn-hover-background;
+                    color: $background-color;
+                }
+            }
+        }
+    }
+}
+
+
+.main-project-card-container-reversed {
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+    }
+
+    img {
+        width: 100%;
+        order: 1;
     }
 }
