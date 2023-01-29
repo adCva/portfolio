@@ -1,18 +1,25 @@
 @import "config";
+@import "global";
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $general-font;
+}
 
 
-// ==================== Components
-@import "./Components/nav";
-@import "./Components/slider";
-@import "./Components/about";
-@import "./Components/tech";
-@import "./Components/interested";
-@import "./Components/footer";
-@import "./Components/mainProjectCard";
-@import "./Components/miscellaneousProjectCard";
+// ================================= Components
+@import "./_Components/nav";
+@import "./_Components/hero";
+@import "./_Components/about";
+@import "./_Components/interested";
+@import "./_Components/footer";
+@import "./_Components/tech";
+@import "./_Components/mainProjectCard";
+@import "./_Components/miscellaneousProjectCard";
 
 
-// ==================== Pages
-@import "./Pages/projects";
-@import "./Pages/photography";
-@import "./Pages/contact";
+// ================================= Pages
+@import "./_Pages/photography";
+@import "./_Pages/portfolio";
+@import "./_Pages/contact";

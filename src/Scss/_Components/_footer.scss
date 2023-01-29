@@ -1,0 +1,83 @@
+.footer-wrapper {
+    background-color: $footer-background-color;
+    color: $background-color;
+
+
+    // ================================= Footer Container.
+    .footer-container {
+        @extend %width-and-center;
+        @extend %general-sections-padding;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+
+        // ================================= Footer Logo and Links.
+        .footer-pages {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.35rem;
+            margin-bottom: 4rem;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                gap: 1.5rem;
+                margin-bottom: 0;
+            }
+
+
+            .footer-logo {
+                @extend %logo;
+                color: $background-color;
+                margin-bottom: 1rem;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 0;
+                    margin-right: 1rem;
+                }
+            }
+
+
+            .footer-link {
+                color: $background-color;
+                font-size: 1.1rem;
+                text-decoration: none;
+                transition: all 0.25s ease-in-out;
+
+                &:hover {
+                    color: $general-hover;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+
+        // ================================= Footer Social Container.
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            
+            a {
+                color: $background-color;
+                font-size: 1.4rem;
+                transition: all 0.25s ease-in-out;
+
+                &:hover {
+                    color: $general-hover;
+                }
+            }
+        }
+    }
+}

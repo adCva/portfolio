@@ -1,0 +1,119 @@
+.nav-container {
+    @extend %width-and-center;
+    @extend %general-sections-padding;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    // ================================= Logo.
+    .nav-logo {
+        @extend %logo;
+    }
+
+
+    // ================================= Open Mobile Menu Hamburgur.
+    .mobile-menu-btn {
+        background: transparent;
+        color: $header-color;
+        font-size: 1.6rem;
+        border: none;
+
+        @media (min-width:768px) {
+            display: none;
+        }
+    }
+
+
+    // ================================= Nav Menu Container.
+    .nav-menu {
+        background-color: $background-color;
+        @extend %general-sections-padding;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+
+        @media (min-width:768px) {
+            all: unset;
+        }
+
+
+        // ================================= Mobile Logo and Close Menu Container.
+        .mobile-inter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (min-width: 768px) {
+                display: none;
+            }
+
+
+            .close-mobile-menu {
+                color: $header-color;
+            }
+        }
+
+
+        // ================================= List and Links.
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            margin: 3rem 0 3.5rem;
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                margin: 0;
+            }
+
+
+            li {
+                width: 100%;
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid $border-faded-color;
+
+                @media (min-width: 768px) {
+                    all: unset;
+                }
+
+
+                .nav-link {
+                    color: $header-color;
+                    font-size: 1.1rem;
+                    text-decoration: none;
+                    transition: all 0.25s ease-in-out;
+
+                    &:hover {
+                        color: $general-hover;
+                    }
+
+                    @media (min-width: 768px) {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+
+        // ================================= Mobile Menu Social Icons Container.
+        .mobile-menu-social-icons-container {
+            display: flex;
+            gap: 1.5rem;
+
+            @media (min-width:768px) {
+                display: none;
+            }
+
+
+            a {
+                color: $header-color;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

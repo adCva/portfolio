@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useTransition, animated } from 'react-spring';
 import { HiMenu } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 function Nav() {
@@ -50,20 +51,36 @@ function Nav() {
 
   return (
     <div className="nav-container">
-      <h1 className="nav-logo">adCva</h1>
+      <h1 className="nav-logo">AD</h1>
       <button onClick={toogleMobileMenu} className="open-mobile-menu mobile-menu-btn"><HiMenu /></button>
       {transition((style, mobileMenu) => mobileMenu ? (
         <animated.div style={style} className="nav-menu">
+
           <div className='mobile-inter'>
-            <h1 className="nav-logo">adCva</h1>
+            <h1 className="nav-logo">AD</h1>
             <button onClick={toogleMobileMenu} className="close-mobile-menu mobile-menu-btn"><CgClose /></button>
           </div>
+
           <ul>
-            <Link to="/" onClick={closeMobileMenuOnLinkClick} className="link">Home</Link>
-            <Link to="/projects" onClick={closeMobileMenuOnLinkClick} className="link">Projects</Link>
-            <Link to="/photography" onClick={closeMobileMenuOnLinkClick} className="link">Photography</Link>
-            <Link to="/contact" onClick={closeMobileMenuOnLinkClick} className="link">Contact</Link>
+            <li>
+              <Link to="/" onClick={closeMobileMenuOnLinkClick} className="nav-link">Home</Link>
+            </li>
+            <li>
+              <Link to="/portfolio" onClick={closeMobileMenuOnLinkClick} className="nav-link">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/gallery" onClick={closeMobileMenuOnLinkClick} className="nav-link">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={closeMobileMenuOnLinkClick} className="nav-link">Contact</Link>
+            </li>
           </ul>
+
+          <div className='mobile-menu-social-icons-container'>
+            <a href="https://github.com/adCva"><FaGithub/></a>
+            <a href="https://www.linkedin.com/in/adrian-dobre-902303213/" ><FaLinkedin/></a>
+          </div>
+
         </animated.div>
       ) : null)}
     </div>

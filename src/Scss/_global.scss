@@ -5,21 +5,87 @@
 
 
 %general-sections-padding {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem;
+
+    @media (min-width: 768px) {
+        padding: 1.5rem 2.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 2rem 0;
+    }
 }
 
 
 %logo {
+    color: $header-color;
     font-family: $logo-font;
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.3px;
     user-select: none;
 
     @media (min-width: 768px) {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     @media (min-width: 1100px) {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+    }
+}
+
+
+%section-header {
+    font-family: $header-font;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+
+    @media (min-width: 768px) {
+        font-size: 2.2rem;
+    }
+}
+
+
+%section-paragraph {
+    font-size: 0.95rem;
+    letter-spacing: -0.3px;
+    text-align: justify;
+    line-height: 1.5;
+
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+
+%button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+
+.page-intro {
+    @extend %width-and-center;
+    @extend %general-sections-padding;
+    text-align: center;
+
+    h1 {
+        color: $header-color;
+        font-family: $header-font;
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        margin-bottom: 1rem
+    }
+
+    p {
+        line-height: 1.7;
     }
 }

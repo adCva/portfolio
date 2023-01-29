@@ -8,10 +8,10 @@ function Footer() {
     <div className='footer-wrapper'>
         <div className='footer-container'>
             <div className="footer-pages">
-                <h6 className='footer-logo'>Adrian Dobre</h6>
+                <h6 className='footer-logo'>AD</h6>
                 <Link to="/" className="footer-link">Home</Link>
-                <Link to="/projects" className="footer-link">Projects</Link>
-                <Link to="/photography" className="footer-link">Photography</Link>
+                <Link to="/projects" className="footer-link">Portfolio</Link>
+                <Link to="/gallery" className="footer-link">Gallery</Link>
                 <Link to="/contact" className="footer-link">Contact</Link>
             </div>
             <div className="footer-social">
