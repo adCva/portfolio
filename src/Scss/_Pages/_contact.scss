@@ -1,127 +1,145 @@
-.contact-container {
-    @extend %width-and-center;
-    @extend %general-sections-padding;
-    margin-bottom: 5rem;
+.content-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    min-height: 100dvh;
 
-    .get-in-touch-container {
-        border-top: 1px solid $border-faded-color;
 
-        @media (min-width: 1200px) {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 2rem;
-        }
+    // ================================= Main Container.
+    .contact-container {
+        @extend %width-and-center;
+        @extend %general-sections-padding;
+        user-select: none;
 
-        h1 {
-            @extend %section-header;
-            color: $header-color;
-            margin: 1.5rem 0 1rem;
-            user-select: none;
+
+        // ================================= Get In Touch Container.
+        .get-in-touch-container {
+            border-top: 1px solid $border-faded-color;
 
             @media (min-width: 1200px) {
-                margin: 0;
-            }
-        }
-
-
-        .get-in-touch-text {
-            @media (min-width: 1200px) {
-                width: 70%;
-            }
-
-            p {
-                @extend %section-paragraph;
-                margin-bottom: 2rem;
-                user-select: none;
-            }
-
-            .get-in-touch-social {
                 display: flex;
-                gap: 1.5rem;
-                margin-bottom: 3.5rem;
+                justify-content: space-between;
+                padding-top: 2rem;
+            }
 
-                a {
-                    color: $header-color;
-                    font-size: 1.5rem;
-                    cursor: pointer;
+
+            h1 {
+                @extend %section-header;
+                color: $header-color;
+                margin: 1.5rem 0 1rem;
+
+                @media (min-width: 1200px) {
+                    margin: 0;
+                }
+            }
+
+
+            // ================================= Get In Touch Sub-Container.
+            .get-in-touch-sub-container {
+                @media (min-width: 1200px) {
+                    width: 70%;
+                }
+
+                p {
+                    @extend %section-paragraph;
+                    margin-bottom: 2rem;
+                }
+
+
+                // ================================= Get In Touch Social Icons Container.
+                .get-in-touch-social {
+                    display: flex;
+                    gap: 1rem;
+                    margin-bottom: 3.5rem;
+
+                    a {
+                        color: $header-color;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        transition: all 0.25s ease-in-out;
+
+                        &:hover {
+                            color: $general-hover;
+                        }
+                    }
                 }
             }
         }
-    }
 
 
-
-    .contact-form-container {
-        margin-top: 2rem;
-        border-top: 1px solid $border-faded-color;
-
-        @media (min-width: 1200px) {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 2rem;
-        }
-
-
-        h1 {
-            @extend %section-header;
-            color: $header-color;
-            margin: 1.5rem 0;
-            user-select: none;
+        // ================================= Contact Form Container.
+        .contact-form-container {
+            border-top: 1px solid $border-faded-color;
 
             @media (min-width: 1200px) {
-                margin: 0;
-            }
-        }
-
-
-        .contact-form {
-            @media (min-width: 1200px) {
-                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                padding-top: 2rem;
             }
 
-            .form-group {
-                display: grid;
-                gap: 0.5rem;
 
-                label {
-                    @extend %section-paragraph;
+            h1 {
+                @extend %section-header;
+                color: $header-color;
+                margin: 1.5rem 0 1rem;
+
+                @media (min-width: 1200px) {
+                    margin: 0;
                 }
-
-                input {
-                    background-color: $form-input-background-color;
-                    padding: 1rem;
-                }
-
-                textarea {
-                    background-color: $form-input-background-color;
-                    padding: 1rem;
-                }
-
-                .error-message {
-                    @extend %section-paragraph;
-                    font-size: 0.8rem !important;
-                    color: $error-color;
-                    margin-bottom: 1rem;
-                }
-
-                .hide-error-message {
-                    display: none;
-                }
-
-                .show-error-message {
-                    display: block;
-                }
-
             }
 
-            button {
-                @extend %button;
-                background-color: $button-blue;
-                color: $background-color;
-                margin-top: 3rem;
 
-                &:hover {
-                    background-color: $transparent-btn-hover-background;
+            // ================================= Form.
+            .contact-form {
+                @media (min-width: 1200px) {
+                    width: 70%;
+                }
+
+
+                // ================================= Form Group.
+                .form-group {
+                    display: grid;
+                    gap: 0.5rem;
+
+                    label {
+                        @extend %section-paragraph;
+                    }
+
+                    input {
+                        background-color: $form-input-background-color;
+                        padding: 1rem;
+                    }
+
+                    textarea {
+                        background-color: $form-input-background-color;
+                        padding: 1rem;
+                    }
+
+                    .error-message {
+                        @extend %section-paragraph;
+                        font-size: 0.8rem !important;
+                        color: $error-color;
+                        margin-bottom: 1rem;
+                    }
+
+                    .hide-error-message {
+                        display: none;
+                    }
+
+                    .show-error-message {
+                        display: block;
+                    }
+                }
+
+                button {
+                    @extend %button;
+                    background-color: $button-blue;
+                    color: $background-color;
+                    margin-top: 2rem;
+
+                    &:hover {
+                        background-color: $transparent-btn-hover-background;
+                    }
                 }
             }
         }

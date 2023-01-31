@@ -2,25 +2,64 @@
     @extend %width-and-center;
     @extend %general-sections-padding;
     text-align: center;
+    margin: 2rem auto 3rem;
 
+    @media (min-width: 900px) {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+    }
 
     h2 {
+        @extend %h2;
         color: $header-color;
-        font-family: $header-font;
-        font-size: 2.2rem;
-        font-weight: 700;
-        letter-spacing: -0.3px;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
+
+        @media (min-width: 900px) {
+            margin-bottom: 0;
+        }
     }
 
     .tech-cards-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        row-gap: 2rem;
+        gap: 1rem;
 
-        @media (min-width: 768px) {
-            grid-template-columns: repeat(3, 1fr);
+        @media (min-width: 900px) {
+            display: flex;
         }
+
+        .tech-card {
+            img {
+                width: 40px;
+
+                @media (min-width: 900px) {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+/*
+.tech-container {
+    @extend %width-and-center;
+    @extend %general-sections-padding;
+    text-align: center;
+    margin: 2rem auto 3rem;
+
+
+    h2 {
+        @extend %h1;
+        color: $header-color;
+        margin-bottom: 3rem;
+    }
+
+    .tech-cards-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .tech-card {
             img {
@@ -29,3 +68,4 @@
         }
     }
 }
+*/

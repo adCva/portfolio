@@ -57,7 +57,7 @@ function Nav() {
         <animated.div style={style} className="nav-menu">
 
           <div className='mobile-inter'>
-            <h1 className="nav-logo">AD</h1>
+            <h1 className="nav-logo white-logo">AD</h1>
             <button onClick={toogleMobileMenu} className="close-mobile-menu mobile-menu-btn"><CgClose /></button>
           </div>
 

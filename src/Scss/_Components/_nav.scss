@@ -1,10 +1,14 @@
 .nav-container {
     @extend %width-and-center;
-    @extend %general-sections-padding;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.5rem;
+
+    @media (min-width: 1200px) {
+        padding: 1.5rem 0;
+    }
 
 
     // ================================= Logo.
@@ -28,8 +32,8 @@
 
     // ================================= Nav Menu Container.
     .nav-menu {
-        background-color: $background-color;
-        @extend %general-sections-padding;
+        background-color: #111111;
+        padding: 1.5rem;
         position: fixed;
         top: 0;
         right: 0;
@@ -52,9 +56,12 @@
                 display: none;
             }
 
+            .white-logo {
+                color: $background-color;
+            }
 
             .close-mobile-menu {
-                color: $header-color;
+                color: $background-color;
             }
         }
 
@@ -75,7 +82,7 @@
             li {
                 width: 100%;
                 padding-bottom: 0.5rem;
-                border-bottom: 1px solid $border-faded-color;
+                border-bottom: 1px solid $light-border-faded-color;
 
                 @media (min-width: 768px) {
                     all: unset;
@@ -83,7 +90,7 @@
 
 
                 .nav-link {
-                    color: $header-color;
+                    color: $background-color;
                     font-size: 1.1rem;
                     text-decoration: none;
                     transition: all 0.25s ease-in-out;
@@ -93,7 +100,8 @@
                     }
 
                     @media (min-width: 768px) {
-                        font-size: 1rem;
+                        color: $header-color;
+                        font-size: 0.95rem;
                     }
                 }
             }
@@ -111,7 +119,7 @@
 
 
             a {
-                color: $header-color;
+                color: $background-color;
                 font-size: 1.4rem;
             }
         }

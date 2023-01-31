@@ -8,19 +8,19 @@ import Tech from '../Components/Tech'
 
 function Home() {
   return (
-    <div>
-        <header>
-            <Nav />
-            <Hero />
-        </header>
-        <main>
-          <About />
-          <Tech />
-          <Interested />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+    <div className='home-wrapper'>
+      <header>
+        <Nav />
+        <Hero />
+      </header>
+      <main>
+        <About />
+        <Tech />
+        <Interested />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
