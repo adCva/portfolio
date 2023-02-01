@@ -2,6 +2,11 @@
     @extend %width-and-center;
     @extend %general-sections-padding;
 
+
+    .main-projects {
+    }
+
+
     .misc-projects {
         @media (min-width: 768px) {
             display: grid;

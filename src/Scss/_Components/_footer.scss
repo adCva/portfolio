@@ -1,12 +1,13 @@
 .footer-wrapper {
+    @extend %align-wrapper-content-center;
     background-color: $footer-background-color;
     color: $background-color;
 
 
     // ================================= Footer Container.
     .footer-container {
-        @extend %width-and-center;
-        @extend %general-sections-padding;
+        @extend %max-width;
+        padding: 2.5rem 0;
         text-align: center;
 
         @media (min-width: 768px) {
@@ -14,6 +15,7 @@
             justify-content: space-between;
             align-items: center;
             text-align: left;
+            padding: 1.5rem 0;
         }
 
 

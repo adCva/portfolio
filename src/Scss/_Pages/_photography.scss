@@ -1,6 +1,6 @@
 .images-container {
-    @extend %width-and-center;
-    @extend %general-sections-padding;
+    @extend %max-width;
+    margin: 0 auto;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

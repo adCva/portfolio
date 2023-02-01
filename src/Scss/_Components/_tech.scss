@@ -1,8 +1,8 @@
 .tech-container {
     @extend %width-and-center;
-    @extend %general-sections-padding;
     text-align: center;
     margin: 2rem auto 3rem;
+    padding: 1.5rem;
 
     @media (min-width: 900px) {
         display: flex;
@@ -21,20 +21,25 @@
     }
 
     .tech-cards-container {
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
 
-        @media (min-width: 900px) {
+        @media (min-width: 768px) {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+
         }
 
         .tech-card {
             img {
                 width: 40px;
+                height: 40px;
 
                 @media (min-width: 900px) {
-                    width: 40px;
+                    width: 100%;
                 }
             }
         }

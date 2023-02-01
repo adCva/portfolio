@@ -1,78 +1,81 @@
-.hero-container {
-    @extend %width-and-center;
-    margin-top: 0.5rem;
-    position: relative;
-    padding: 0 1.5rem;
-
-    @media (min-width: 768px) {
-        margin-top: 1rem;
-    }
-
-    @media (min-width: 1200px) {
-        // margin-top: 0;
-        padding: 0;
-    }
+.hero-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
 
-    // ================================= Swiper Container.
-    /*
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-    */
-
-
-    // ================================= Hero Text Container.
-    .hero-text {
-        margin-top: 1.7rem;
+    // ================================= Main Container.
+    .hero-container {
+        @extend %max-width;
+        margin-top: 0.5rem;
+        position: relative;
 
         @media (min-width: 768px) {
-            background-color: $background-color;
-            // background-color: rgba(255, 255, 255, .9);
-            position: absolute;
-            bottom: 0;
-            width: 500px;
-            margin-top: 0;
-            padding: 2.5rem 2.5rem 1.5rem;
-            z-index: 99;
-            border-top-right-radius: 10px;
+            margin-top: 1rem;
             box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
         }
 
-        @media (min-width: 1200px) {
-            width: 550px;
-        }
+
+        // ================================= Swiper Container.
+        /*
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+            }
+        */
 
 
-        h1 {
-            color: $header-color;
-            font-family: $header-font;
-            font-size: 2.2rem;
-            font-weight: 700;
-            line-height: 1.2;
-            letter-spacing: -0.3px;
+        // ================================= Hero Text Container.
+        .hero-text {
+            margin-top: 1.7rem;
 
             @media (min-width: 768px) {
-                font-size: 2.5rem;
+                 // background-color: rgba(255, 255, 255, .9);
+                background-color: $background-color;
+                position: absolute;
+                bottom: 0;
+                width: 500px;
+                margin-top: 0;
+                padding: 2.5rem 2.5rem 1.5rem;
+                z-index: 99;
+                border-top-right-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
             }
 
             @media (min-width: 1200px) {
-                font-size: 2.7rem;
+                width: 550px;
             }
-        }
 
 
-        .hero-btn {
-            @extend %button;
-            background-color: $button-blue;
-            color: $background-color;
-            text-decoration: none;
-            text-transform: uppercase;
-            margin-top: 2rem;
+            h1 {
+                color: $header-color;
+                font-family: $header-font;
+                font-size: 2.2rem;
+                font-weight: 700;
+                line-height: 1.2;
+                letter-spacing: -0.3px;
 
-            &:hover {
-                background-color: $transparent-btn-hover-background;
+                @media (min-width: 768px) {
+                    font-size: 2.5rem;
+                }
+
+                @media (min-width: 1200px) {
+                    font-size: 2.7rem;
+                }
+            }
+
+
+            .hero-btn {
+                @extend %button;
+                background-color: $button-blue;
+                color: $background-color;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin-top: 2rem;
+
+                &:hover {
+                    background-color: $transparent-btn-hover-background;
+                }
             }
         }
     }

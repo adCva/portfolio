@@ -15,7 +15,6 @@ function Home() {
       </header>
       <main>
         <About />
-        <Tech />
         <Interested />
       </main>
       <footer>

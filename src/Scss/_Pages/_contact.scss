@@ -8,7 +8,7 @@
     // ================================= Main Container.
     .contact-container {
         @extend %width-and-center;
-        @extend %general-sections-padding;
+        padding: 1.5rem;
         user-select: none;
 
 

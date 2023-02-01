@@ -8,10 +8,12 @@ import Nav from '../Components/Nav';
 function Portfolio() {
   return (
     <div>
+      
       <header>
         <Nav />
       </header>
-      <main>
+
+      <main className='portfolio-wrapper'>
         <div className='projects-container'>
 
           <div className='page-intro'>
@@ -40,9 +42,11 @@ function Portfolio() {
         </div>
         <Interested />
       </main>
+
       <footer>
         <Footer />
       </footer>
+
     </div>
   )
 }

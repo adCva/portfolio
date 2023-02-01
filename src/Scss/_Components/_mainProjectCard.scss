@@ -1,7 +1,7 @@
 .main-project-card-container {
-    // margin-bottom: 6rem;
     text-align: center;
     user-select: none;
+    padding: 1.5rem;
 
     @media (min-width: 768px) {
         // margin-bottom: 7rem;
@@ -9,7 +9,7 @@
 
     @media (min-width: 900px) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
         gap: 2rem;
         // margin-bottom: 10rem;
     }
@@ -24,8 +24,10 @@
         width: 100%;
         max-width: 450px;
         height: 100%;
+        border-radius: 5px;
 
         @media (min-width: 900px) {
+            border-radius: 0;
             border-top-left-radius: 5%;
             border-bottom-left-radius: 5%;
         }
@@ -38,11 +40,14 @@
         padding-top: 1.5rem;
         border-top: 1px solid $border-faded-color;
 
+        @media (min-width: 600px) {
+            width: 600px;
+            margin: 0 auto 0;
+        }
+
         @media (min-width: 900px) {
-            width: 90%;
-            margin-top: 0;
-            padding: 1.5rem;
-            border-bottom: 1px solid $border-faded-color;
+            width: 85%;
+            padding: 1.5rem 0 0;
         }
 
 
@@ -81,7 +86,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 50px;
+                height: 40px;
                 background-color: transparent;
                 color: $header-color;
                 font-size: 1.1rem;
@@ -105,7 +110,7 @@
     @media (min-width: 900px) {
         // background-color: #f2f2f2;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr;
         gap: 2rem;
         // margin-bottom: 5rem;
     }
