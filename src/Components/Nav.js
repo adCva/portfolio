@@ -50,41 +50,39 @@ function Nav() {
 
 
   return (
-    <div className='nav-wrapper'>
-      <div className="nav-container">
-        <h1 className="nav-logo">AD</h1>
-        <button onClick={toogleMobileMenu} className="open-mobile-menu mobile-menu-btn"><HiMenu /></button>
-        {transition((style, mobileMenu) => mobileMenu ? (
-          <animated.div style={style} className="nav-menu">
+    <div className="nav-container">
+      <h1 className="nav-logo">AD</h1>
+      <button onClick={toogleMobileMenu} className="open-mobile-menu mobile-menu-btn"><HiMenu /></button>
+      {transition((style, mobileMenu) => mobileMenu ? (
+        <animated.div style={style} className="nav-menu">
 
-            <div className='mobile-inter'>
-              <h1 className="nav-logo white-logo">AD</h1>
-              <button onClick={toogleMobileMenu} className="close-mobile-menu mobile-menu-btn"><CgClose /></button>
-            </div>
+          <div className='mobile-inter'>
+            <h1 className="nav-logo white-logo">AD</h1>
+            <button onClick={toogleMobileMenu} className="close-mobile-menu mobile-menu-btn"><CgClose /></button>
+          </div>
 
-            <ul>
-              <li>
-                <Link to="/" onClick={closeMobileMenuOnLinkClick} className="nav-link">Home</Link>
-              </li>
-              <li>
-                <Link to="/portfolio" onClick={closeMobileMenuOnLinkClick} className="nav-link">Portfolio</Link>
-              </li>
-              <li>
-                <Link to="/gallery" onClick={closeMobileMenuOnLinkClick} className="nav-link">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/contact" onClick={closeMobileMenuOnLinkClick} className="nav-link">Contact</Link>
-              </li>
-            </ul>
+          <ul>
+            <li>
+              <Link to="/" onClick={closeMobileMenuOnLinkClick} className="nav-link">Home</Link>
+            </li>
+            <li>
+              <Link to="/portfolio" onClick={closeMobileMenuOnLinkClick} className="nav-link">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/gallery" onClick={closeMobileMenuOnLinkClick} className="nav-link">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={closeMobileMenuOnLinkClick} className="nav-link">Contact</Link>
+            </li>
+          </ul>
 
-            <div className='mobile-menu-social-icons-container'>
-              <a href="https://github.com/adCva"><FaGithub/></a>
-              <a href="https://www.linkedin.com/in/adrian-dobre-902303213/" ><FaLinkedin/></a>
-            </div>
+          <div className='mobile-menu-social-icons-container'>
+            <a href="https://github.com/adCva"><FaGithub/></a>
+            <a href="https://www.linkedin.com/in/adrian-dobre-902303213/" ><FaLinkedin/></a>
+          </div>
 
-          </animated.div>
-        ) : null)}
-      </div>
+        </animated.div>
+      ) : null)}
     </div>
   )
 }

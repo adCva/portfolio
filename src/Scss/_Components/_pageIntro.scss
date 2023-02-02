@@ -1,0 +1,27 @@
+.page-intro-container {
+    @extend %max-width;
+    text-align: center;
+    margin: 1.5rem auto 3rem;
+
+    @media (min-width: $tablet) {
+        margin: 3rem auto;
+    }
+
+    @media (min-width: $desktop) {
+        margin: 3rem auto 4rem;
+    }
+
+
+    h1 {
+        @extend %h1;
+        color: $header-color;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        @extend %paragraph-big;
+        line-height: 1.7;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}

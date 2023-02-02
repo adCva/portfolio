@@ -1,12 +1,14 @@
+
+/*
 .misc-card-container {
     border-radius: 10px;
-    background-color: #f4f9ff;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 
     // ================================= Image.
     img {
         width: 100%;
-        max-height: 170px;
+        max-height: 150px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
@@ -14,7 +16,7 @@
 
     // ================================= Card text container.
     .misc-card-text-container {
-        // text-align: center;
+        text-align: center;
         padding: 1rem;
 
 
@@ -30,24 +32,22 @@
 
         // ================================= Card buttons container.
         .card-buttons-container {
-            display: grid;
-            gap: 1rem;
-
             a {
-                height: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 color: $header-color;
+                font-size: 1.1rem;
                 text-decoration: none;
-                border: 1px solid $border-faded-color;
                 cursor: pointer;
                 transition: all 0.25s ease-in-out;
 
                 &:hover {
                     color: $general-hover;
                 }
+
+                &:first-of-type {
+                    margin-right: 1.5rem;
+                }
             }
         }
     }
 }
+*/

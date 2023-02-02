@@ -6,7 +6,7 @@ $general-font: 'Public Sans', sans-serif;
 
 // =========================== Colors.
 $background-color: #fafafa;
-$section-background-color: #f7f7f7;
+$interested-section-background-color: #faf9f4;
 $footer-background-color: #2c2a35;
 $card-background-color: #292929;
 $form-input-background-color: #f5f5f5;
@@ -21,3 +21,11 @@ $general-hover: #5ab19e;
 
 $border-faded-color: rgba(0, 0, 0, 0.1);
 $light-border-faded-color: rgba(255, 255, 255, 0.1);
+
+
+
+// =========================== Breakpoints.
+$tablet-small: 640px;
+$tablet: 768px;
+$tablet-big: 900px;
+$desktop: 1100px;

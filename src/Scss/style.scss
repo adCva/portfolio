@@ -1,12 +1,6 @@
 @import "config";
 @import "global";
 
-body {
-    background-color: $background-color;
-    color: $text-color;
-    font-family: $general-font;
-}
-
 
 // ================================= Components
 @import "./_Components/nav";
@@ -17,10 +11,18 @@ body {
 @import "./_Components/tech";
 @import "./_Components/mainProjectCard";
 @import "./_Components/miscellaneousProjectCard";
+@import "./_Components/pageIntro";
 
 
 // ================================= Pages
 @import "./_Pages/home";
-@import "./_Pages/photography";
+@import "./_Pages/gallery";
 @import "./_Pages/portfolio";
 @import "./_Pages/contact";
+
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $general-font;
+}

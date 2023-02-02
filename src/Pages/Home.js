@@ -1,27 +1,27 @@
-import React from 'react'
-import About from '../Components/About'
-import Footer from '../Components/Footer'
-import Hero from '../Components/Hero'
-import Interested from '../Components/Interested'
-import Nav from '../Components/Nav'
-import Tech from '../Components/Tech'
+import React from 'react';
+import Nav from '../Components/Nav';
+import Hero from '../Components/Hero';
+import About from '../Components/About';
+import Interested from '../Components/Interested';
+import Footer from '../Components/Footer';
+
 
 function Home() {
   return (
-    <div className='home-wrapper'>
+    <div className='page-wrapper'>
       <header>
         <Nav />
-        <Hero />
       </header>
       <main>
+        <Hero />
         <About />
-        <Interested />
       </main>
       <footer>
+        <Interested />
         <Footer />
       </footer>
     </div>
   )
 }
 
-export default Home
+export default Home;

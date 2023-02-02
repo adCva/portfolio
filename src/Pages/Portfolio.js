@@ -4,49 +4,27 @@ import Interested from '../Components/Interested';
 import MainProjectCard from '../Components/MainProjectCard';
 import MiscellaneousProjectCard from '../Components/MiscellaneousProjectCard';
 import Nav from '../Components/Nav';
+import PageIntro from '../Components/PageIntro';
 
 function Portfolio() {
   return (
-    <div>
-      
+    <div className='page-wrapper'>
       <header>
         <Nav />
       </header>
-
-      <main className='portfolio-wrapper'>
-        <div className='projects-container'>
-
-          <div className='page-intro'>
-            <h1>Portfolio</h1>
-            <p>Here you can find some of the projects that I made. I try to add to this portfolio regularly so make sure you check back for the latest projects.</p>
-          </div>
-
-          <div className='main-projects'>
-            <MainProjectCard />
-            <MainProjectCard reversed={true} />
-            <MainProjectCard />
-            <MainProjectCard reversed={true}/>
-          </div>
-
-          <div className='misc-projects'>
-            <MiscellaneousProjectCard />
-            <MiscellaneousProjectCard />
-            <MiscellaneousProjectCard />
-            <MiscellaneousProjectCard />
-            <MiscellaneousProjectCard />
-            <MiscellaneousProjectCard />
-            <MiscellaneousProjectCard />
-            <MiscellaneousProjectCard />
-          </div>
-          
+      <main className='page-main-wrapper'>
+        <PageIntro title="Portfolio" desc="Here you can find some of the projects that I made. I try to add to this portfolio regularly so make sure you check back for the latest projects." />
+        
+        <div className='main-projects'>
+          <MainProjectCard />
+          <MainProjectCard reversed={true} />
         </div>
-        <Interested />
-      </main>
 
+      </main>
       <footer>
+        <Interested />
         <Footer />
       </footer>
-
     </div>
   )
 }

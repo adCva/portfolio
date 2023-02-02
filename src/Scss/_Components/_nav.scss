@@ -1,131 +1,126 @@
-.nav-wrapper {
-    @extend %align-wrapper-content-center;
+.nav-container {
+    @extend %max-width;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
 
-
-    // ================================= Main Container.
-    .nav-container {
-        @extend %max-width;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    @media (min-width: $tablet) {
         padding: 1.5rem 0;
+    }
 
-        @media (min-width: 768px) {
-            padding: 2rem 0 1rem;
+
+    // ================================= Logo.
+    .nav-logo {
+        @extend %logo;
+    }
+
+
+    // ================================= Open Mobile Menu Hamburgur.
+    .mobile-menu-btn {
+        background: transparent;
+        color: $header-color;
+        font-size: 1.6rem;
+        border: none;
+
+        @media (min-width: $tablet) {
+            display: none;
+        }
+    }
+
+
+    // ================================= Nav Menu Container.
+    .nav-menu {
+        background-color: #111111;
+        padding: 1.5rem 1.3rem;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 999;
+
+        @media (min-width: $tablet) {
+            all: unset;
         }
 
 
-        // ================================= Logo.
-        .nav-logo {
-            @extend %logo;
-        }
+        // ================================= Mobile Logo and Close Menu Container.
+        .mobile-inter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-
-        // ================================= Open Mobile Menu Hamburgur.
-        .mobile-menu-btn {
-            background: transparent;
-            color: $header-color;
-            font-size: 1.6rem;
-            border: none;
-
-            @media (min-width: 768px) {
+            @media (min-width: $tablet) {
                 display: none;
             }
+
+            .white-logo {
+                color: $background-color;
+            }
+
+            .close-mobile-menu {
+                color: $background-color;
+            }
         }
 
 
-        // ================================= Nav Menu Container.
-        .nav-menu {
-            background-color: #111111;
-            padding: 1.5rem 1.3rem;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            z-index: 999;
+        // ================================= List and Links.
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            margin: 3rem 0 3.5rem;
 
-            @media (min-width: 768px) {
-                all: unset;
+            @media (min-width: $tablet) {
+                flex-direction: row;
+                margin: 0;
             }
 
 
-            // ================================= Mobile Logo and Close Menu Container.
-            .mobile-inter {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            li {
+                width: 100%;
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid $light-border-faded-color;
 
-                @media (min-width: 768px) {
-                    display: none;
+                @media (min-width: $tablet) {
+                    all: unset;
                 }
 
-                .white-logo {
+
+                .nav-link {
                     color: $background-color;
-                }
+                    font-size: 1.1rem;
+                    text-decoration: none;
+                    transition: all 0.25s ease-in-out;
 
-                .close-mobile-menu {
-                    color: $background-color;
-                }
-            }
-
-
-            // ================================= List and Links.
-            ul {
-                display: flex;
-                flex-direction: column;
-                gap: 2.5rem;
-                margin: 3rem 0 3.5rem;
-
-                @media (min-width: 768px) {
-                    flex-direction: row;
-                    margin: 0;
-                }
-
-
-                li {
-                    width: 100%;
-                    padding-bottom: 0.5rem;
-                    border-bottom: 1px solid $light-border-faded-color;
-
-                    @media (min-width: 768px) {
-                        all: unset;
+                    &:hover {
+                        color: $general-hover;
                     }
 
-
-                    .nav-link {
-                        color: $background-color;
-                        font-size: 1.1rem;
-                        text-decoration: none;
-                        transition: all 0.25s ease-in-out;
-
-                        &:hover {
-                            color: $general-hover;
-                        }
-
-                        @media (min-width: 768px) {
-                            color: $header-color;
-                            font-size: 0.95rem;
-                        }
+                    @media (min-width: $tablet) {
+                        color: $header-color;
+                        font-size: 0.95rem;
                     }
                 }
             }
+        }
 
 
-            // ================================= Mobile Menu Social Icons Container.
-            .mobile-menu-social-icons-container {
-                display: flex;
-                gap: 1rem;
+        // ================================= Mobile Menu Social Icons Container.
+        .mobile-menu-social-icons-container {
+            display: flex;
+            gap: 1.5rem;
 
-                @media (min-width: 768px) {
-                    display: none;
-                }
+            @media (min-width: $tablet) {
+                display: none;
+            }
 
-                a {
-                    color: $background-color;
-                    font-size: 1.4rem;
-                }
+
+            a {
+                color: $background-color;
+                font-size: 1.4rem;
             }
         }
     }

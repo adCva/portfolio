@@ -1,26 +1,16 @@
 // ================================================================== Spacing.
 %align-wrapper-content-center {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 %max-width {
     width: 90%;
     max-width: 1100px;
-}
-
-
-
-
-%width-and-center {
     margin: 0 auto;
-    max-width: 1100px;
 }
-
-%general-sections-padding {
-
-}
-
 
 
 // ================================================================== Typographie.
@@ -50,12 +40,12 @@
 
 %h3 {
     font-family: $header-font;
-    font-size: 1.15rem;
+    font-size: 1.35rem;
     font-weight: 700;
     letter-spacing: -0.3px;
 
     @media (min-width: 768px) {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -83,7 +73,6 @@
     letter-spacing: -0.3px;
     line-height: 1.5;
 }
-
 
 
 // ================================================================== Others.
@@ -117,46 +106,21 @@
 }
 
 
-
-
-
-
-
-
-
-
-%section-header {
-    font-family: $header-font;
-    font-size: 2.1rem;
-    font-weight: 700;
-    letter-spacing: -0.3px;
-
-    @media (min-width: 768px) {
-        font-size: 2.2rem;
-    }
-}
-
-
-%section-paragraph {
-    font-size: 0.95rem;
-    letter-spacing: -0.3px;
-    text-align: justify;
-    line-height: 1.5;
-
-    @media (min-width: 768px) {
-        font-size: 1rem;
-    }
+.page-wrapper {
+    @extend %align-wrapper-content-center;
 }
 
 
 .page-intro {
-    @extend %width-and-center;
-    @extend %general-sections-padding;
     text-align: center;
-    margin-bottom: 3rem;
+    margin: 2rem 0 3rem;
 
-    @media (min-width: 1000px) {
-        margin-bottom: 4rem;
+    @media (min-width: 768px) {
+        margin: 3.5rem 0;
+    }
+
+    @media (min-width: 1100px) {
+        margin: 3.5rem 0 4rem;
     }
 
     h1 {

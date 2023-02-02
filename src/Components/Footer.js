@@ -10,7 +10,7 @@ function Footer() {
             <div className="footer-pages">
                 <h6 className='footer-logo'>AD</h6>
                 <Link to="/" className="footer-link">Home</Link>
-                <Link to="/projects" className="footer-link">Portfolio</Link>
+                <Link to="/portfolio" className="footer-link">Portfolio</Link>
                 <Link to="/gallery" className="footer-link">Gallery</Link>
                 <Link to="/contact" className="footer-link">Contact</Link>
             </div>

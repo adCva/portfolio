@@ -1,76 +1,83 @@
-.about-wrapper {
-    @extend %align-wrapper-content-center;
+.about-container  {
+    @extend %max-width;
+    margin: 3rem auto 5rem;
+
+    @media (min-width: $tablet) {
+        margin: 5rem auto;
+    }
 
 
-    // ================================= Main Container.
-    .about-container {
-        @extend %max-width;
-        margin: 3rem 0 4rem;
-        border-top: 1px solid $border-faded-color;
-
-        @media (min-width: 768px) {
-            margin: 3rem 0 5rem;
+    // ================================= About Image & Text.
+    .about-group {
+        @media (min-width: $tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 3rem;
+        }
+    
+        @media (min-width: $desktop) {
+            grid-template-columns: 1.2fr 2fr;
         }
 
-        @media (min-width: 1100px) {
-            display: flex;
-            justify-content: space-between;
-            margin: 3rem 0 6rem;
-            padding-top: 2rem;
+
+        // ================================= Image.
+        img {
+            width: 100%;
+            // height: 300px;
+            // object-fit: cover;
+            
+            /*
+                @media (min-width: $tablet) {
+                    height: 100%;
+                }
+            */
         }
 
 
-        h2 {
-            @extend %h1;
-            color: $header-color;
-            margin: 1.5rem 0 1rem;
+        // ================================= Text Container.
+        .about-text-container {
+            margin-top: 2rem;
+            border-top: 1px solid #111111;
 
-            @media (min-width: 1100px) {
-                margin: 0;
+            @media (min-width: $tablet) {
+                margin-top: 0;
             }
-        }
 
 
-        // ================================= Sub Container.
-        .about-sub-container {
-            @media (min-width: 1100px) {
-                width: 70%;
+            h2 {
+                @extend %h1;
+                color: $header-color;
+                margin: 2rem 0 1rem;
             }
-
 
             p {
-                @extend %section-paragraph;
-                margin-bottom: 2rem;
+                @extend %paragraph-big;
+                color: $text-color;
+                line-height: 1.7;
             }
+        }
+    }
 
 
-            // ================================= Tech Icons Container.
-            .tech-icons-container {
-                display: grid;
-                grid-template-columns: repeat(5, auto);
-                justify-content: center;
-                grid-gap: 2rem;
-
-                @media (min-width: 500px) {
-                    grid-gap: 2.5rem;
-                }
-
-                @media (min-width: 768px) {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-
-                img {
-                    width: 30px;
-                    height: 25px;
-
-                    @media (min-width: 500px) {
-                        width: 35px;
-                        height: 30px;
-                    }
-                }
-            }
+    // ================================= Tech Icons Container.
+    .tech-icons-container {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    
+        @media (min-width: $tablet) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3rem;
+        }
+    
+    
+        img {
+            width: 100%;
+            height: 35px;
         }
     }
 }

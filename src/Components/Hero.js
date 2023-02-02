@@ -15,36 +15,34 @@ import { Autoplay, Navigation } from "swiper";
 
 function Hero() {
   return (
-    <div className="hero-wrapper">
-        <div className="hero-container">
-            <Swiper 
-                spaceBetween={20} 
-                centeredSlides={true}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
-                navigation={false}
-                modules={[Autoplay, Navigation]}
-            >
-                <SwiperSlide>
-                    <img src="images/DSC0042.jpg" alt="Slide #1" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="images/DSC0146.jpg" alt="Slide #2" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img src="images/DSC0415.jpg" alt="Slide #3" />
-                </SwiperSlide>
-            </Swiper>
-            
-            <div className="hero-text">
-                <h1>Hey, I'm Adrian and I love taking photos and building software</h1>
-                <Link to="/portfolio" className="hero-btn">Portfolio</Link>
-            </div>
+    <div className="hero-container">
+        <Swiper 
+            spaceBetween={20} 
+            centeredSlides={true}
+            autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+            }}
+            navigation={false}
+            modules={[Autoplay, Navigation]}
+        >
+            <SwiperSlide>
+                <img src="images/DSC0042.jpg" alt="Slide #1" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src="images/DSC0146.jpg" alt="Slide #2" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src="images/DSC0415.jpg" alt="Slide #3" />
+            </SwiperSlide>
+        </Swiper>
+        
+        <div className="hero-text">
+            <h1>Hey, I'm Adrian and I love taking photos and building software</h1>
+            <Link to="/projects" className="hero-btn">Portfolio</Link>
         </div>
     </div>
   )
 }
 
-export default Hero;
+export default Hero

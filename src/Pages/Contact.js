@@ -20,13 +20,13 @@ function Contact() {
 
 
   return (
-    <div className='content-wrapper'>
+    <div className='page-wrapper'>
       <header>
       <Nav />
       </header>
         <div className='contact-container'>
 
-          <div className='get-in-touch-container'>
+          <div className='split-container'>
             <h1>Get in Touch</h1>
             <div className='get-in-touch-sub-container'>
               <p>I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunities that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.</p>
@@ -37,7 +37,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className='contact-form-container'>
+          <div className='split-container'>
             <h1>Contact Me</h1>
             <div className='contact-form'>
               <form onSubmit={handleSubmit}>
