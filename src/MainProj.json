@@ -1,0 +1,57 @@
+{
+    "project": [
+        {
+            "title": "Lorem ipsum",
+            "description": "Simple testimonials component with 5 elements set into a simple grid pattern. Made with ReactJs and CSS",
+            "gitHub": "https://github.com/adCva/testimonials",
+            "livePage": "https://adcva.github.io/testimonials/",
+            "imagePath": "./images/miscPrj/testimonials.jpg",
+            "reversed": true
+        },
+
+        {
+            "title": "Lorem ipsum",
+            "description": "Simple testimonials component with 5 elements set into a simple grid pattern. Made with ReactJs and CSS",
+            "gitHub": "https://github.com/adCva/testimonials",
+            "livePage": "https://adcva.github.io/testimonials/",
+            "imagePath": "./images/miscPrj/testimonials.jpg",
+            "reversed": false
+        },
+
+        {
+            "title": "Countries APP",
+            "description": "REST Countries APP & color theme switcher written in ReactJs, SCSS and REST Countries API",
+            "gitHub": "https://github.com/adCva/countries",
+            "livePage": "https://adcva.github.io/countries/",
+            "imagePath": "./images/miscPrj/countries.jpg",
+            "reversed": true
+        },
+
+        {
+            "title": "URL shortening API landing page",
+            "description": "URL shortening API page written in ReactJs, SCSS, React Icons, React Spring & Shrtcode API",
+            "gitHub": "https://github.com/adCva/shortly",
+            "livePage": "https://adcva.github.io/shortly/",
+            "imagePath": "./images/miscPrj/shortURL.jpg",
+            "reversed": false
+        },
+
+        {
+            "title": "Dine Restaurant Website",
+            "description": "Dine restaurant website written in ReactJs, SCSS, React Router & React Spring",
+            "gitHub": "https://github.com/adCva/restaurant-page",
+            "livePage": "https://adcva.github.io/restaurant-page/",
+            "imagePath": "./images/miscPrj/dine.jpg",
+            "reversed": true
+        },
+
+        {
+            "title": "Jobs Listings",
+            "description": "Job listings page with filtering written in ReactJs, SCSS & Redux",
+            "gitHub": "https://github.com/adCva/job-listings",
+            "livePage": "https://adcva.github.io/job-listings/",
+            "imagePath": "./images/miscPrj/job-listing.jpg",
+            "reversed": false
+        }
+    ]
+}

@@ -1,23 +1,25 @@
-
-/*
 .misc-card-container {
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: $background-color;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 
-
-    // ================================= Image.
     img {
         width: 100%;
-        max-height: 150px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        height: 180px;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 
 
-    // ================================= Card text container.
+    // ================================= Text container.
     .misc-card-text-container {
-        text-align: center;
-        padding: 1rem;
+        // text-align: center;
+        padding: 2rem;
+
+        @media (min-width: $tablet-small) {
+            padding: 1.5rem 2rem;
+        }
 
 
         h2 {
@@ -30,8 +32,10 @@
         }
 
 
-        // ================================= Card buttons container.
+        // ================================= Buttons container.
         .card-buttons-container {
+            display: flex;
+            justify-content: space-evenly;
             a {
                 color: $header-color;
                 font-size: 1.1rem;
@@ -44,10 +48,9 @@
                 }
 
                 &:first-of-type {
-                    margin-right: 1.5rem;
+                    margin-right: 2rem;
                 }
             }
         }
     }
 }
-*/

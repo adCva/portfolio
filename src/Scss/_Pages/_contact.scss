@@ -79,6 +79,10 @@
                 input, textarea {
                     background-color: $form-input-background-color;
                     padding: 1rem;
+
+                    @media (min-width: $desktop) {
+                        max-width: 800px;
+                    }
                 }
 
 

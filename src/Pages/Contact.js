@@ -22,8 +22,9 @@ function Contact() {
   return (
     <div className='page-wrapper'>
       <header>
-      <Nav />
+        <Nav />
       </header>
+      <main>
         <div className='contact-container'>
 
           <div className='split-container'>
@@ -76,7 +77,10 @@ function Contact() {
           </div>
 
         </div>
-      <Footer />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
