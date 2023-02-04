@@ -65,13 +65,14 @@
 
             .form-group {
                 display: grid;
-                gap: 0.5rem;
+                // gap: 0.5rem;
                 margin-bottom: 1.5rem;
 
 
                 // ================================= Label.
                 label {
                     @extend %paragraph-small;
+                    border: 1px solid transparent;
                 }
 
 
@@ -79,6 +80,7 @@
                 input, textarea {
                     background-color: $form-input-background-color;
                     padding: 1rem;
+                    border: 1px solid transparent;
 
                     @media (min-width: $desktop) {
                         max-width: 800px;
@@ -87,19 +89,31 @@
 
 
                 // ================================= Error Messages.
+                .input-error {
+                    border: 1px solid $error-color;
+                    transition: all 0.25s ease-in-out;
+
+                    &:focus {
+                        border: 1px solid transparent;
+                    }
+                }
+
+
                 .error-message {
                     @extend %paragraph-small;
                     font-size: 0.8rem !important;
                     color: $error-color;
-                    margin-bottom: 1rem;
+                    transition: all 0.25s ease-in-out;
+                    transform: scale(1, 0);
+                    transform-origin: top;
                 }
 
                 .hide-error-message {
-                    display: none;
+                    transform: scale(1, 0);
                 }
 
                 .show-error-message {
-                    display: block;
+                    transform: scale(1, 1);
                 }
             }
 
