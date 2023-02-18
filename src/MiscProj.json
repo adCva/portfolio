@@ -1,6 +1,14 @@
 {
     "project": [
         {
+            "title": "Dictionary app",
+            "description": "Dictionary web app with theme change. Made with React, Redux, React Icons, Scss & DictionaryAPI",
+            "gitHub": "https://github.com/adCva/dictionary",
+            "livePage": "https://adcva.github.io/dictionary/",
+            "imagePath": "./images/miscPrj/dictionary.jpg"
+        },
+
+        {
             "title": "Testimonials grid section",
             "description": "Simple testimonials component with 5 elements set into a simple grid pattern. Made with ReactJs and CSS",
             "gitHub": "https://github.com/adCva/testimonials",
@@ -209,11 +217,11 @@
         },
 
         {
-            "title": "C.R.U.D App",
-            "description": "Simple C.R.U.D app written in PHP",
+            "title": "Budget tracker app",
+            "description": "A simple Budget tracker app written in PHP",
             "gitHub": "https://github.com/adCva/crud-php",
             "livePage": "#",
-            "imagePath": "./images/miscPrj/crudPHP.jpg"
+            "imagePath": "./images/miscPrj/crudPHP.png"
         }
     ]
 }
