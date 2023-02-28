@@ -97,14 +97,6 @@
         },
 
         {
-            "title": "Rock & Paper Gane",
-            "description": "Rock, Paper, Scissors, Lizard & Spock game written in ReactJs, Styled Components & Redux",
-            "gitHub": "https://github.com/adCva/rock-paper",
-            "livePage": "https://adcva.github.io/rock-paper/",
-            "imagePath": "./images/miscPrj/rock-paper.jpg"
-        },
-
-        {
             "title": "Insure Landing Page",
             "description": "Insure landing page written in ReactJs, SCSS, React Spring, React Scroll & React Icons",
             "gitHub": "https://github.com/adCva/insure",

@@ -1,26 +1,25 @@
 {
     "project": [
         {
-            "title": "Lorem ipsum",
-            "description": "Simple testimonials component with 5 elements set into a simple grid pattern. Made with ReactJs and CSS",
-            "gitHub": "https://github.com/adCva/testimonials",
-            "livePage": "https://adcva.github.io/testimonials/",
-            "imagePath": "./images/miscPrj/testimonials.jpg",
+            "title": "Hotel Webpage and CMS.",
+            "description": "The project is built with object-oriented programming (OOP) and follows the model-view-controller (MVC) architecture. It uses a combination of technologies including PHP, JavaScript, CSS, and some other smaller stuff like PHP Mailer (for confirmation of various actions like booking or asking for help). The CMS (Content Management System) is built to provides an intuitive interface for managing website content including adding, editing, and deleting rooms, events, menu items and much more. With this CMS (tailord made for the website), users can easily update the website without needing to have any technical knowledge or experience.",
+            "gitHub": "https://github.com/adCva/hotel-website-cms",
+            "livePage": "#",
+            "imagePath": "./images/miscPrj/hotel.jpg",
             "reversed": true
         },
 
         {
-            "title": "Lorem ipsum",
-            "description": "Simple testimonials component with 5 elements set into a simple grid pattern. Made with ReactJs and CSS",
-            "gitHub": "https://github.com/adCva/testimonials",
-            "livePage": "https://adcva.github.io/testimonials/",
-            "imagePath": "./images/miscPrj/testimonials.jpg",
-            "reversed": false
+            "title": "Rock, Paper, Scissors, Lizard & Spock Game",
+            "description": "Rock, Paper, Scissors, Lizard & Spock game written in ReactJs, Styled Components & Redux",
+            "gitHub": "https://github.com/adCva/rock-paper",
+            "livePage": "https://adcva.github.io/rock-paper/",
+            "imagePath": "./images/miscPrj/rock-paper.jpg"
         },
 
         {
             "title": "Countries APP",
-            "description": "REST Countries APP & color theme switcher written in ReactJs, SCSS and REST Countries API",
+            "description": "The app is built using React, SCSS, and Redux. It integrates with the REST Countries API to fetch information about all the countries on the planet, and allows users to search for information about any specific country. Among other things, the app features a theme switcher, which allows users to change the color scheme of the site. I used this because it provides a personalized experience. It offers comprehensive information, including country flags, currency, language, population, and more. The website's intuitive interface makes it easy for users to find the information they need quickly and efficiently.",
             "gitHub": "https://github.com/adCva/countries",
             "livePage": "https://adcva.github.io/countries/",
             "imagePath": "./images/miscPrj/countries.jpg",
@@ -29,7 +28,7 @@
 
         {
             "title": "URL shortening API landing page",
-            "description": "URL shortening API page written in ReactJs, SCSS, React Icons, React Spring & Shrtcode API",
+            "description": "URL shortener app built using React, SCSS, and an Shrtcode API call. It provides users with an easy and efficient way to shorten URLs, making them easier to share and more convenient to use. The website features an intuitive interface that makes it simple for users to enter a long URL and generate a shortened version. The app then make a call to the API and provides the user with a copyable link. A simple and efficient way to shorten URLs.",
             "gitHub": "https://github.com/adCva/shortly",
             "livePage": "https://adcva.github.io/shortly/",
             "imagePath": "./images/miscPrj/shortURL.jpg",
@@ -38,7 +37,7 @@
 
         {
             "title": "Dine Restaurant Website",
-            "description": "Dine restaurant website written in ReactJs, SCSS, React Router & React Spring",
+            "description": "Restaurant page built using React, React Router, React Spring, and SCSS. It features a clean and modern design, with a responsive layout that works seamlessly across all devices. With React Router, the app allows users to easily navigate between different pages without having to reload the entire site. This feature provides a seamless user experience and ensures that visitors can quickly find the information they need.",
             "gitHub": "https://github.com/adCva/restaurant-page",
             "livePage": "https://adcva.github.io/restaurant-page/",
             "imagePath": "./images/miscPrj/dine.jpg",
@@ -47,7 +46,7 @@
 
         {
             "title": "Jobs Listings",
-            "description": "Job listings page with filtering written in ReactJs, SCSS & Redux",
+            "description": "Job listing platform built using React and Redux & SCSS. It features a comprehensive listing of job openings, along with advanced filters that allow users to quickly find the jobs that match their qualifications and interests.",
             "gitHub": "https://github.com/adCva/job-listings",
             "livePage": "https://adcva.github.io/job-listings/",
             "imagePath": "./images/miscPrj/job-listing.jpg",

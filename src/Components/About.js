@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 
 function About() {
   const techIcons = [
@@ -52,7 +51,7 @@ function About() {
         <img src="./images/about.jpg" alt="About" />
         <div className='about-text-container'>
           <h2>About me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>I am a passionate software developer who loves challenges and solving problems. I started with programing because I have a deep desire to understand how things work, are made and can be improved. I have experience with JavaScript, React, PHP, MySQL, CSS, and SCSS, as well as a good understanding of Python and Django. My current focus is on mastering the latest web development technologies and the ones that I already know. Looking to the future, I am excited to continue my journey in software development and to expand my knowledge to new areas such as Java and C++ (and maybe even C#).</p>
         </div>
       </div>
       <div className='tech-icons-container'>
