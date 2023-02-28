@@ -9,91 +9,43 @@
         },
 
         {
-            "title": "Testimonials grid section",
-            "description": "Simple testimonials component with 5 elements set into a simple grid pattern. Made with ReactJs and CSS",
-            "gitHub": "https://github.com/adCva/testimonials",
-            "livePage": "https://adcva.github.io/testimonials/",
-            "imagePath": "./images/miscPrj/testimonials.jpg"
-        },
-
-        {
-            "title": "Pricing component",
-            "description": "Pricing component with toggle written in ReactJs and Styled Components",
-            "gitHub": "https://github.com/adCva/pricing-component",
-            "livePage": "https://adcva.github.io/pricing-component/",
-            "imagePath": "./images/miscPrj/pricing-comp.jpg"
-        },
-
-        {
-            "title": "Ping single column",
-            "description": "Ping single column coming soon page written in React JS & Styled components",
-            "gitHub": "https://github.com/adCva/Ping",
-            "livePage": "https://adcva.github.io/Ping/",
-            "imagePath": "./images/miscPrj/ping-single-column.jpg"
-        },
-
-        {
-            "title": "Price component",
-            "description": "Single price grid component written in ReactJs & CSS",
-            "gitHub": "https://github.com/adCva/single-price",
-            "livePage": "https://adcva.github.io/single-price/",
-            "imagePath": "./images/miscPrj/single-price-grid.jpg"
-        },
-
-        {
-            "title": "Rating component",
-            "description": "Interactive rating component written in ReactJs & Styled components",
-            "gitHub": "https://github.com/adCva/rating",
-            "livePage": "https://adcva.github.io/rating/",
-            "imagePath": "./images/miscPrj/rating.jpg"
-        },
-
-        {
-            "title": "Comments section",
-            "description": "Interactive comments section written in ReactJs, SCSS, React Icons & Redux",
-            "gitHub": "https://github.com/adCva/int-comments",
-            "livePage": "https://adcva.github.io/int-comments/",
-            "imagePath": "./images/miscPrj/interactive-comments.jpg"
-        },
-
-        {
-            "title": "IP Address Tracker",
-            "description": "IP Address Tracker written in ReactJs, SCSS, React Icons, Redux and Leaflet & IP Geolocation APIs",
-            "gitHub": "https://github.com/adCva/int-comments",
-            "livePage": "https://adcva.github.io/ipAdress/",
-            "imagePath": "./images/miscPrj/ip-location.jpg"
-        },
-
-        {
-            "title": "Advice generator",
-            "description": "Advice generator app written in ReactJs with Styled Components and Advice Slip API",
-            "gitHub": "https://github.com/adCva/quotes-generator",
-            "livePage": "https://adcva.github.io/quotes-generator/",
-            "imagePath": "./images/miscPrj/advice.jpg"
-        },
-
-        {
-            "title": "Room Homepage",
-            "description": "Room homepage written in ReactJs & SCSS",
-            "gitHub": "https://github.com/adCva/room",
-            "livePage": "https://adcva.github.io/room/",
-            "imagePath": "./images/miscPrj/room.jpg"
-        }, 
-
-        {
             "title": "E-commerce product page",
             "description": "Room homepage written in ReactJs, Styled Components & Redux",
             "gitHub": "https://github.com/adCva/e-commerce",
             "livePage": "https://adcva.github.io/e-commerce/",
-            "imagePath": "./images/miscPrj/e-commerce.jpg"
+            "imagePath": "./images/miscPrj/e-commerce.png"
         },
 
         {
-            "title": "Fylo Landing Page",
-            "description": "Fylo simple landing page written in ReactJs & Styled Components",
-            "gitHub": "https://github.com/adCva/fylo-landing",
-            "livePage": "https://adcva.github.io/fylo-landing/",
-            "imagePath": "./images/miscPrj/fylo.jpg"
+            "title": "Art Gallery Website",
+            "description": "Art gallery website written in ReactJs, SCSS, React Router, React Leaflet & Leaflet API",
+            "gitHub": "https://github.com/adCva/art-website",
+            "livePage": "https://adcva.github.io/art-website/",
+            "imagePath": "./images/miscPrj/artWeb.png"
+        },
+
+        {
+            "title": "Photosnap Multi-Page Website",
+            "description": "Photosnap multi-page website written in ReactJs, Styled Components, React Router, React Spring & React Icons",
+            "gitHub": "https://github.com/adCva/photosnap",
+            "livePage": "https://adcva.github.io/photosnap/",
+            "imagePath": "./images/miscPrj/photosnap.png"
+        },
+
+        {
+            "title": "Crowdfunding Page",
+            "description": "Crowdfunding product page written in ReactJs, Styled Components, Swiper & React Scroll",
+            "gitHub": "https://github.com/adCva/crowdfunding-page",
+            "livePage": "https://adcva.github.io/crowdfunding-page/",
+            "imagePath": "./images/miscPrj/crowdfunding.jpg"
+        },
+
+        {
+            "title": "Space Tourism Multi-Page",
+            "description": "Space tourism multi-page website written in ReactJs, Styled Components, Redux & React Router",
+            "gitHub": "https://github.com/adCva/space-tourism",
+            "livePage": "https://adcva.github.io/space-tourism/",
+            "imagePath": "./images/miscPrj/space.png"
         },
 
         {
@@ -113,6 +65,38 @@
         },
 
         {
+            "title": "Manage Landing Page",
+            "description": "Manage landing page written in ReactJs, Styled Components, Swiper & React Icons",
+            "gitHub": "https://github.com/adCva/manage-landing",
+            "livePage": "https://adcva.github.io/manage-landing/",
+            "imagePath": "./images/miscPrj/manage.jpg"
+        },
+
+        {
+            "title": "Budget tracker app PHP",
+            "description": "A simple Budget tracker app written in PHP",
+            "gitHub": "https://github.com/adCva/crud-php",
+            "livePage": "#",
+            "imagePath": "./images/miscPrj/crudPHP.jpg"
+        },
+
+        {
+            "title": "Budget tracker app Django",
+            "description": "A simple Budget tracker app written in PHP",
+            "gitHub": "https://github.com/adCva/crud-php",
+            "livePage": "https://adcva.github.io/budget-django-frontend/",
+            "imagePath": "./images/miscPrj/budget-django.jpg"
+        },
+
+        {
+            "title": "Fylo Landing Page",
+            "description": "Fylo simple landing page written in ReactJs & Styled Components",
+            "gitHub": "https://github.com/adCva/fylo-landing",
+            "livePage": "https://adcva.github.io/fylo-landing/",
+            "imagePath": "./images/miscPrj/fylo.jpg"
+        },
+
+        {
             "title": "Huddle Banner Page",
             "description": "Huddle banner page with a single introductory section written in ReactJs, Styled Components & React Icons",
             "gitHub": "https://github.com/adCva/huddle-banner",
@@ -129,30 +113,6 @@
         },
 
         {
-            "title": "Crowdfunding Page",
-            "description": "Crowdfunding product page written in ReactJs, Styled Components, Swiper & React Scroll",
-            "gitHub": "https://github.com/adCva/crowdfunding-page",
-            "livePage": "https://adcva.github.io/crowdfunding-page/",
-            "imagePath": "./images/miscPrj/crowdfunding.jpg"
-        },
-
-        {
-            "title": "Manage Landing Page",
-            "description": "Manage landing page written in ReactJs, Styled Components, Swiper & React Icons",
-            "gitHub": "https://github.com/adCva/manage-landing",
-            "livePage": "https://adcva.github.io/manage-landing/",
-            "imagePath": "./images/miscPrj/manage.jpg"
-        },
-
-        {
-            "title": "Space Tourism Multi-Page",
-            "description": "Space tourism multi-page website written in ReactJs, Styled Components, Redux & React Router",
-            "gitHub": "https://github.com/adCva/space-tourism",
-            "livePage": "https://adcva.github.io/space-tourism/",
-            "imagePath": "./images/miscPrj/space.jpg"
-        },
-
-        {
             "title": "Huddle Landing Page",
             "description": "Huddle landing page website & color theme switcher written in ReactJs, Styled Components, Redux, React Scroll & React Icons",
             "gitHub": "https://github.com/adCva/huddle-landing",
@@ -161,35 +121,20 @@
         },
 
         {
-            "title": "Art Gallery Website",
-            "description": "Art gallery website written in ReactJs, SCSS, React Router, React Leaflet & Leaflet API",
-            "gitHub": "https://github.com/adCva/art-website",
-            "livePage": "https://adcva.github.io/art-website/",
-            "imagePath": "./images/miscPrj/art.jpg"
+            "title": "Comments section",
+            "description": "Interactive comments section written in ReactJs, SCSS, React Icons & Redux",
+            "gitHub": "https://github.com/adCva/int-comments",
+            "livePage": "https://adcva.github.io/int-comments/",
+            "imagePath": "./images/miscPrj/interactive-comments.jpg"
         },
+        
 
         {
-            "title": "Photosnap Multi-Page Website",
-            "description": "Photosnap multi-page website written in ReactJs, Styled Components, React Router, React Spring & React Icons",
-            "gitHub": "https://github.com/adCva/photosnap",
-            "livePage": "https://adcva.github.io/photosnap/",
-            "imagePath": "./images/miscPrj/photosnap.jpg"
-        },
-
-        {
-            "title": "Snake Game",
-            "description": "Simple Snake game written in Java",
-            "gitHub": "https://github.com/adCva/java-snake-game",
-            "livePage": "#",
-            "imagePath": "./images/miscPrj/snake.jpg"
-        },
-
-        {
-            "title": "Notes App",
-            "description": "Simple notes app written in JS & CSS",
-            "gitHub": "https://github.com/adCva/notes",
-            "livePage": "https://adcva.github.io/notes/",
-            "imagePath": "./images/miscPrj/notes.jpg"
+            "title": "IP Address Tracker",
+            "description": "IP Address Tracker written in ReactJs, SCSS, React Icons, Redux and Leaflet & IP Geolocation APIs",
+            "gitHub": "https://github.com/adCva/int-comments",
+            "livePage": "https://adcva.github.io/ipAdress/",
+            "imagePath": "./images/miscPrj/ip-location.jpg"
         },
 
         {
@@ -201,19 +146,76 @@
         },
 
         {
+            "title": "Advice generator",
+            "description": "Advice generator app written in ReactJs with Styled Components and Advice Slip API",
+            "gitHub": "https://github.com/adCva/quotes-generator",
+            "livePage": "https://adcva.github.io/quotes-generator/",
+            "imagePath": "./images/miscPrj/advice.jpg"
+        },
+
+        {
+            "title": "Rating component",
+            "description": "Interactive rating component written in ReactJs & Styled components",
+            "gitHub": "https://github.com/adCva/rating",
+            "livePage": "https://adcva.github.io/rating/",
+            "imagePath": "./images/miscPrj/rating.jpg"
+        },
+
+        {
+            "title": "Room Homepage",
+            "description": "Room homepage written in ReactJs & SCSS",
+            "gitHub": "https://github.com/adCva/room",
+            "livePage": "https://adcva.github.io/room/",
+            "imagePath": "./images/miscPrj/room.jpg"
+        },
+
+
+        {
+            "title": "Testimonials grid section",
+            "description": "Simple testimonials component with 5 elements set into a simple grid pattern. Made with ReactJs and CSS",
+            "gitHub": "https://github.com/adCva/testimonials",
+            "livePage": "https://adcva.github.io/testimonials/",
+            "imagePath": "./images/miscPrj/testimonials.jpg"
+        },
+
+        {
+            "title": "Pricing component",
+            "description": "Pricing component with toggle written in ReactJs and Styled Components",
+            "gitHub": "https://github.com/adCva/pricing-component",
+            "livePage": "https://adcva.github.io/pricing-component/",
+            "imagePath": "./images/miscPrj/pricing-comp.png"
+        },
+
+        {
+            "title": "Ping single column",
+            "description": "Ping single column coming soon page written in React JS & Styled components",
+            "gitHub": "https://github.com/adCva/Ping",
+            "livePage": "https://adcva.github.io/Ping/",
+            "imagePath": "./images/miscPrj/ping-single-column.png"
+        },
+
+        {
+            "title": "Price component",
+            "description": "Single price grid component written in ReactJs & CSS",
+            "gitHub": "https://github.com/adCva/single-price",
+            "livePage": "https://adcva.github.io/single-price/",
+            "imagePath": "./images/miscPrj/single-price-grid.png"
+        }, 
+
+        {
             "title": "Feedback Modal",
             "description": "Simple feedback modal written in HTML & CSS",
             "gitHub": "https://github.com/adCva/feedback-modal",
             "livePage": "https://adcva.github.io/feedback-modal/",
-            "imagePath": "./images/miscPrj/feedback.jpg"
+            "imagePath": "./images/miscPrj/modal.jpg"
         },
 
         {
-            "title": "Budget tracker app",
-            "description": "A simple Budget tracker app written in PHP",
-            "gitHub": "https://github.com/adCva/crud-php",
-            "livePage": "#",
-            "imagePath": "./images/miscPrj/crudPHP.png"
+            "title": "Notes App",
+            "description": "Simple notes app written in JS & CSS",
+            "gitHub": "https://github.com/adCva/notes",
+            "livePage": "https://adcva.github.io/notes/",
+            "imagePath": "./images/miscPrj/notes.jpg"
         }
     ]
 }

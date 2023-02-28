@@ -11,7 +11,7 @@
 
         {
             "title": "Rock, Paper, Scissors, Lizard & Spock Game",
-            "description": "Rock, Paper, Scissors, Lizard & Spock game written in ReactJs, Styled Components & Redux",
+            "description": "Rock, Paper, Scissors, Lizard & Spock is a web-based game built using React, Styled Components, and Redux, the game features a modern and visually engaging interface that makes it easy for players to understand and enjoy. By using Redux, the game provides players with a seamless experience by ensuring that the game state is always up to date and accurate.",
             "gitHub": "https://github.com/adCva/rock-paper",
             "livePage": "https://adcva.github.io/rock-paper/",
             "imagePath": "./images/miscPrj/rock-paper.jpg"

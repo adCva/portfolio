@@ -58,6 +58,7 @@ function Contact() {
                 <div className='form-group'>
                   <label>Name:</label>
                   <input
+                    name='userName'
                     type="text"
                     value={name}
                     placeholder="John Doe"
@@ -70,6 +71,7 @@ function Contact() {
                 <div className='form-group'>
                   <label>Email:</label>
                   <input
+                    name='email'
                     type="email"
                     value={email}
                     placeholder="john.doe@email.com"
@@ -81,7 +83,7 @@ function Contact() {
 
                 <div className='form-group'>
                   <label>Message:</label>
-                  <textarea value={textArea} placeholder="How can I help?" onChange={(e) => setTextArea(e.target.value)} className={errorLocation === "textarea" ? "input-error" : "" } />
+                  <textarea name='textarea' value={textArea} placeholder="How can I help?" onChange={(e) => setTextArea(e.target.value)} className={errorLocation === "textarea" ? "input-error" : "" } />
                   <p className={errorLocation === "textarea" ? "error-message show-error-message" : "hide-error-message"}>This field is required</p>
                 </div>
 

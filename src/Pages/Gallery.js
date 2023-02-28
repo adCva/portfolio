@@ -26,6 +26,7 @@ function Gallery() {
             <img src="images/3.jpg" alt="Slide" loading='lazy'/>
           </div>
 
+          
           <div>
             <img src="images/4.jpg" alt="Slide" loading='lazy'/>
           </div>
@@ -78,19 +79,19 @@ function Gallery() {
             <img src="images/16.jpg" alt="Slide" loading='lazy'/>
           </div>
 
-          <div className="horizontal-stretch">
+          <div>
             <img src="images/17.jpg" alt="Slide" loading='lazy'/>
           </div>
 
-          <div>
+          <div className="vertical-stretch">
             <img src="images/18.jpg" alt="Slide" loading='lazy'/>
           </div>
 
-          <div className="big-stretch">
+          <div >
             <img src="images/19.jpg" alt="Slide" loading='lazy'/>
           </div>
 
-          <div>
+          <div className="big-stretch">
             <img src="images/20.jpg" alt="Slide" loading='lazy'/>
           </div>
 

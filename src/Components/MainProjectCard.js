@@ -8,8 +8,8 @@ function MainProjectCard(props) {
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
         <div className='card-buttons-container'>
-          <a href={props.gitHub}>Code</a>
-          <a href={props.livePage} className='dark-btn'>Live Page</a>
+          <a href={props.code} target="_blank" rel='noreferrer'>Code</a>
+          <a href={props.page} className='dark-btn' target="_blank" rel='noreferrer'>Live Page</a>
         </div>
       </div>
     </div>

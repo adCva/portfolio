@@ -1,2 +1,3 @@
-# Portfolio website, 4 pages
+# Portfolio website.
 
+Made with React, React Router & SCSS.

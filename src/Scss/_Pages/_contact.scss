@@ -81,6 +81,14 @@
                     background-color: $form-input-background-color;
                     padding: 1rem;
                     border: 1px solid transparent;
+                    outline: none;
+                    cursor: pointer;
+                    border: 1px solid transparent;
+                    transition: all 0.25s ease-in-out;
+
+                    &:focus {
+                        border: 1px solid $button-blue;
+                    }
 
                     @media (min-width: $desktop) {
                         max-width: 800px;

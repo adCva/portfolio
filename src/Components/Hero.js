@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,18 +27,21 @@ function Hero() {
             modules={[Autoplay, Navigation]}
         >
             <SwiperSlide>
-                <img src="images/DSC0042.jpg" alt="Slide #1" />
+                <img src="images/slide/dine.png" alt="Slide #1" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="images/DSC0146.jpg" alt="Slide #2" />
+                <img src="images/slide/hotel.png" alt="Slide #2" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="images/DSC0415.jpg" alt="Slide #3" />
+                <img src="images/slide/art.png" alt="Slide #3" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src="images/slide/photosnap.png" alt="Slide #4" />
             </SwiperSlide>
         </Swiper>
         
         <div className="hero-text">
-            <h1>Hey, I'm Adrian and I love taking photos and building software</h1>
+            <h1>Hey, I'm Adrian and I love taking photos and building software.</h1>
             <Link to="/projects" className="hero-btn">Portfolio</Link>
         </div>
     </div>
