@@ -8,8 +8,12 @@ function MiscellaneousProjectCard(props) {
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
         <div className='card-buttons-container'>
-          <a href={props.code} target="_blank" >Code</a>
-          <a href={props.page} target="_blank" >Live Page</a>
+          <a href={props.code} target="_blank" rel='noreferrer'>Code</a>
+          {props.page === "#" ? (
+            null
+          ) : (
+            <a href={props.page} target="_blank" rel='noreferrer'>Live Page</a>
+          )}
         </div>
       </div>
     </div>

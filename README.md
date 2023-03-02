@@ -1,3 +1,3 @@
 # Portfolio website.
 
-Made with React, React Router & SCSS.
+Made with React, React Router, React Spring, Swiper & SCSS.

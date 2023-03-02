@@ -9,7 +9,11 @@ function MainProjectCard(props) {
         <p>{props.desc}</p>
         <div className='card-buttons-container'>
           <a href={props.code} target="_blank" rel='noreferrer'>Code</a>
-          <a href={props.page} className='dark-btn' target="_blank" rel='noreferrer'>Live Page</a>
+          {props.page === "#" ? (
+            <button className='no-page'>No Live Page</button>
+          ) : (
+            <a href={props.page} className='dark-btn' target="_blank" rel='noreferrer'>Live Page</a>
+          )}
         </div>
       </div>
     </div>

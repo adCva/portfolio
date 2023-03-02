@@ -105,6 +105,10 @@
     transition: all 0.25s ease-in-out;
 }
 
+.no-page {
+    background-color: #ececec;
+}
+
 
 .page-wrapper {
     @extend %align-wrapper-content-center;

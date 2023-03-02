@@ -42,7 +42,7 @@ function Hero() {
         
         <div className="hero-text">
             <h1>Hey, I'm Adrian and I love taking photos and building software.</h1>
-            <Link to="/projects" className="hero-btn">Portfolio</Link>
+            <Link to="/portfolio" className="hero-btn">Portfolio</Link>
         </div>
     </div>
   )
