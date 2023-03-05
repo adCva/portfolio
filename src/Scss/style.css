@@ -104,6 +104,7 @@
 
 .no-page {
   background-color: #ececec;
+  height: 45px;
 }
 
 .page-intro {
@@ -699,6 +700,7 @@
     grid-auto-rows: 250px;
     grid-auto-flow: dense;
     grid-gap: 10px;
+    row-gap: 10px;
   }
 }
 @media (min-width: 768px) {
