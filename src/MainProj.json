@@ -2,7 +2,7 @@
     "project": [
         {
             "title": "Hotel Webpage and CMS.",
-            "description": "The project is built with object-oriented programming (OOP) and follows the model-view-controller (MVC) architecture. It uses a combination of technologies including PHP, JavaScript, CSS, and some other smaller stuff like PHP Mailer (for confirmation of various actions like booking or asking for help). The CMS (Content Management System) is built to provides an intuitive interface for managing website content including adding, editing, and deleting rooms, events, menu items and much more. With this CMS (tailord made for the website), users can easily update the website without needing to have any technical knowledge or experience.",
+            "description": "The project is built with object-oriented programming (OOP) and follows the model-view-controller (MVC) architecture. It uses a combination of technologies including PHP, JavaScript, CSS, and some other smaller stuff like PHP Mailer (for confirmation of various actions like booking or asking for help). The CMS (Content Management System) is built to provides an intuitive interface for managing website content including adding, editing, and deleting rooms, events, menu items and much more. With this CMS (tailord made for the website), users can easily update the website without needing to have any technical knowledge or experience. The github repo contains screenshots.",
             "gitHub": "https://github.com/adCva/hotel-website-cms",
             "livePage": "#",
             "imagePath": "./images/miscPrj/hotel.jpg",
